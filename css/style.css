@@ -1,0 +1,12 @@
+/* SETUP AND HELPERS*/
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --maroon: #6b0002;
+    --blue: #c3d5fd;
+    --orange: #f5773b;
+    --pink: #f2b5a8;
+    --peach: #fde0d2;
+}
