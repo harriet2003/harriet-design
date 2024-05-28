@@ -1,3 +1,90 @@
-.capitalise{
-    text-transform: capitalize;
+:root {
+    --maroon: #6b0002;
+    --blue: #c3d5fd;
+    --orange: #f5773b;
+    --pink: #f2b5a8;
+    --peach: #fde0d2;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lexend+Deca:wght@100..900&display=swap');
+
+h1 {
+    font-size: 5rem;
+    font-family: "DM Serif Display", serif;
+    font-weight: 100;
+    line-height: 5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: "DM Serif Display", serif;
+    font-weight: 100;
+}
+
+h3 {
+    font-size: 2.25rem;
+    font-family: "DM Serif Display", serif;
+    font-weight: 100;
+    margin: 0;
+}
+
+h4, .bio button {
+    font-size: 1.25rem;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+p {
+    font-size: 1rem;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+h5 {
+    font-size: 0.75rem;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+h6 {
+    font-size: 0.5rem;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.capitalise {
+    text-transform: uppercase;
+}
+
+nav i{
+    font-size: 1.75rem;
+}
+
+footer h2{
+    margin-block: 0 1rem;
+}
+
+footer a:hover{
+    color: white;
+}
+
+
+/* Home Page */
+
+.landing div h1,
+.landing div h4 {
+    color: var(--maroon);
+}
+

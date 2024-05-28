@@ -4,35 +4,38 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Harriet Design</title>
-      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/typography.css" />
       <script src="js/script.js" defer></script>
+      <script src="https://kit.fontawesome.com/2028364a6f.js" crossorigin="anonymous"></script>
    </head>
 
    <body>
-      <header>
+      <header class="landing peachBackground">
          <nav>
-            <img src="" alt="logo" />
+            <img class="logo" src="images/h-logo.png" alt="logo" />
             <i class="fa-solid fa-bars"></i>
          </nav>
 
-         <div>
+         <div id="title">
             <h1>Harriet <i>Design</i></h1>
             <h4 class="capitalise">welcome to my corner of the internet</h4>
          </div>
 
-         <!--Arrow-->
+         <i class="fa-solid fa-arrow-down arrow"></i>
       </header>
 
       <main>
          <section class="bio">
-            <h3 class="capitalise">Lets' create something cool.</h3>
-            <h2>
+            <h2 class="capitalise">Lets create something cool.</h2>
+            <h4>
                I’m Harriet, an Auckland-based designer specialising in UI and UX. <br />
-               I design with empathy, connecting with people through play and thoughtful design.
-            </h2>
+               I design with <button style="color: #6b0002;">empathy</button>, <button style="color: #c3d5fd;">connection</button> with people through <button style="color: #f2b5a8;">play</button> and thoughtful design.
+            </h4>
          </section>
 
          <section class="services">
+            <p class="capitalise">Services Include</p>
             <h2>UX/UI Design, Web Design, Brand Identity, Graphic Design, Social Media Design, Data Visualisation, Campaign Design</h2>
             <!--image 1-->
             <!--image 2-->
@@ -42,40 +45,39 @@
 
          <section class="projects">
             <h2>Projects</h2>
-            <p>Put blurb here</p>
 
             <div class="projectCards">
-               <div class="budProjectDiv">
-                  <h6>2023</h6>
-                  <img src="" alt="Bud Banner Image" />
+               <div class="projectCard budProjectDiv">
+                  <h5>2023</h5>
+                  <img src="images/bud/bud-phones.jpg" alt="Mockup of Bud interface on phones" />
                   <div class="projectTags">
                      <span>UX/UI</span>
                      <span>Graphic</span>
                      <span>Web Design</span>
                   </div>
-                  <h4>Bud</h4>
+                  <h3>Bud</h3>
                </div>
 
-               <div class="smallDataProjectDiv">
-                  <h6>2023</h6>
-                  <img src="" alt="Small Data Banner Image" />
+               <div class="projectCard smallDataProjectDiv">
+                  <h5>2023</h5>
+                  <img src="images/smallData/computer-mockup.jpg" alt="Mockup of Small Data computer screen" />
                   <div class="projectTags">
                      <span>Data Driven</span>
                      <span>Experimental</span>
                      <span>UX/UI</span>
                   </div>
-                  <h4>Small Data</h4>
+                  <h3>Small Data</h3>
                </div>
 
-               <div class="btbProjectDiv">
-                  <h6>2024</h6>
-                  <img src="" alt="Beat the Binge Banner Image" />
+               <div class="projectCard btbProjectDiv">
+                  <h5>2024</h5>
+                  <img src="images/beatTheBinge/mobile-mockup.jpg" alt="Beat the Binge mobile mockup" />
                   <div class="projectTags">
                      <span>UX/UI</span>
                      <span>Campaign</span>
-                     <span>Project Management</span>
+                     <span>Project Lead</span>
                   </div>
-                  <h4>Beat the Binge</h4>
+                  <h3>Beat the Binge</h3>
                </div>
             </div>
          </section>
