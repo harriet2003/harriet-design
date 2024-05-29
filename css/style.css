@@ -32,7 +32,7 @@ img {
     border-radius: 1rem;
 }
 
-.button{
+.button {
     background-color: white;
     border: 1px solid black;
     border-radius: 1.5rem;
@@ -40,7 +40,7 @@ img {
     width: fit-content;
 }
 
-.button:hover{
+.button:hover {
     background-color: var(--pink);
 }
 
@@ -129,41 +129,66 @@ nav img {
 
 /* ABOUT PAGE */
 
-.aboutBio{
+.aboutBio {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     height: 90vh;
 }
 
-.portrait{
+.portrait {
     width: 66%;
 }
 
-.portrait img{
+.portrait img {
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
 }
 
-.aboutBio div:nth-child(2){
+.aboutBio div:nth-child(2) {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.contactSection{
+.contactSection {
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.contactButton{
+.contactButton {
     margin: 0 auto;
     margin-top: 1rem;
 }
 
+/* PROJECTS PAGE */
+.projectGallery {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.projectGalleryCard div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: fit-content;
+}
+
+.projectGalleryCard img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.projectGalleryCard .projectTags {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
 
 
 /* FOOTER */

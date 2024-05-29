@@ -44,7 +44,7 @@ p {
     margin: 0;
 }
 
-h5 {
+h5, span {
     font-size: 0.75rem;
     font-family: "Lexend Deca", sans-serif;
     font-weight: 400;
@@ -100,3 +100,4 @@ footer a:hover{
     width: 80%;
     margin: 0 auto;
 }
+
