@@ -64,6 +64,12 @@ a{
     cursor: pointer;
 }
 
+.button{
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
 .capitalise {
     text-transform: uppercase;
 }
@@ -88,3 +94,9 @@ footer a:hover{
     color: var(--maroon);
 }
 
+/* About Page */
+
+.contactSection h5{
+    width: 80%;
+    margin: 0 auto;
+}

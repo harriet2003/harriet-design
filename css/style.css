@@ -32,6 +32,18 @@ img {
     border-radius: 1rem;
 }
 
+.button{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 1.5rem;
+    padding: 0.5rem 1.75rem;
+    width: fit-content;
+}
+
+.button:hover{
+    background-color: var(--pink);
+}
+
 /* NAVBAR */
 nav {
     height: 72px;
@@ -115,11 +127,50 @@ nav img {
     font-size: 0.75rem;
 }
 
+/* ABOUT PAGE */
+
+.aboutBio{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 90vh;
+}
+
+.portrait{
+    width: 66%;
+}
+
+.portrait img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.aboutBio div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contactSection{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contactButton{
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+
+
 /* FOOTER */
 footer {
     background-color: var(--blue);
     height: 300px;
-    padding: 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
