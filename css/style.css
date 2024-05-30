@@ -29,7 +29,7 @@ section {
 }
 
 img {
-    border-radius: 1rem;
+    border-radius: 0.75rem;
 }
 
 .button {
@@ -188,6 +188,51 @@ nav img {
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
+}
+
+/* Individual Project Pages */
+
+.projectBio {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.projectBio .projectTags {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.projectBio img {
+    margin-block: 2rem;
+}
+
+.projectContent,
+.projectContent div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.projectContent img {
+    margin-block: 1rem;
+}
+
+.fullWidthImage {
+    border-radius: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.lastImage {
+    margin-top: 3rem;
+}
+
+.nextProjectBar {
+    display: flex;
+    justify-content: space-between;
 }
 
 
