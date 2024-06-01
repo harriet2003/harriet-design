@@ -6,20 +6,44 @@
       <title>Harriet Design | Projects</title>
       <link rel="stylesheet" href="css/style.css" />
       <link rel="stylesheet" href="css/typography.css" />
+      <link rel="stylesheet" href="CSS/navbar.css" />
       <script src="js/script.js" defer></script>
       <script src="https://kit.fontawesome.com/2028364a6f.js" crossorigin="anonymous"></script>
    </head>
 
    <body>
       <header>
-         <nav>
+         <nav class="mobile-nav">
             <img class="logo" src="images/h-logo.png" alt="logo" />
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" onclick="openNav()"></i>
+
+            <!-- The overlay -->
+            <div id="myNav" class="overlay">
+               <!-- Button to close the overlay navigation -->
+               <i class="fa-solid fa-xmark closebtn" onclick="closeNav()"></i>
+
+               <!-- Overlay content -->
+               <div class="overlay-content">
+                  <a href="index.html">Home</a>
+                  <a href="about.html">About</a>
+                  <a href="projects.html" class="current">Projects</a>
+                  <a href="https://www.instagram.com/_artbyharriet/" target=”_blank”>Art</a>
+               </div>
+            </div>
+         </nav>
+
+         <nav class="desktop-nav">
+            <img class="logo" src="images/h-logo.png" alt="logo" />
+            <div>
+               <a href="about.html">About</a>
+               <a href="projects.html">Projects</a>
+               <a href="https://www.instagram.com/_artbyharriet/" target=”_blank”>Art</a>
+            </div>
          </nav>
       </header>
 
       <main>
-         <h2 style="text-align: center;">Projects</h2>
+         <h2 style="text-align: center">Projects</h2>
 
          <section class="projectGallery">
             <div class="projectGalleryCard budProjectDiv">
@@ -55,7 +79,7 @@
             </div>
 
             <div class="projectGalleryCard btbProjectDiv">
-               <img src="images/beatTheBinge/mobile-mockup.jpg" alt="Beat the Binge Banner Image" />
+               <img src="images/beatTheBinge/btb-mobile mockups.jpg" alt="Beat the Binge Banner Image" />
                <div>
                   <h3>Beat the Binge</h3>
                   <p>A bold and daring campaign to encourage young people to slow down their drinking with interactive spaces.</p>

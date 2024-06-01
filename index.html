@@ -6,15 +6,39 @@
       <title>Harriet Design</title>
       <link rel="stylesheet" href="css/style.css" />
       <link rel="stylesheet" href="css/typography.css" />
+      <link rel="stylesheet" href="CSS/navbar.css" />
       <script src="js/script.js" defer></script>
       <script src="https://kit.fontawesome.com/2028364a6f.js" crossorigin="anonymous"></script>
    </head>
 
    <body>
       <header class="landing peachBackground">
-         <nav>
+         <nav class="mobile-nav">
             <img class="logo" src="images/h-logo.png" alt="logo" />
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" onclick="openNav()"></i>
+
+            <!-- The overlay -->
+            <div id="myNav" class="overlay">
+               <!-- Button to close the overlay navigation -->
+               <i class="fa-solid fa-xmark closebtn" onclick="closeNav()"></i>
+               
+               <!-- Overlay content -->
+               <div class="overlay-content">
+                  <a href="index.html" class="current">Home</a>
+                  <a href="about.html">About</a>
+                  <a href="projects.html">Projects</a>
+                  <a href="https://www.instagram.com/_artbyharriet/" target=”_blank”>Art</a>
+               </div>
+            </div>
+         </nav>
+
+         <nav class="desktop-nav">
+            <img class="logo" src="images/h-logo.png" alt="logo" />
+            <div>
+               <a href="about.html">About</a>
+               <a href="projects.html">Projects</a>
+               <a href="https://www.instagram.com/_artbyharriet/" target=”_blank”>Art</a>
+            </div>
          </nav>
 
          <div id="title">
@@ -30,7 +54,8 @@
             <h2 class="capitalise">Lets create something cool.</h2>
             <h4>
                I’m Harriet, an Auckland-based designer specialising in UI and UX. <br />
-               I design with <button style="color: #6b0002;">empathy</button>, <button style="color: #c3d5fd;">connection</button> with people through <button style="color: #f2b5a8;">play</button> and thoughtful design.
+               I design with <button style="color: #6b0002">empathy</button>, <button style="color: #c3d5fd">connection</button> with people through
+               <button style="color: #f2b5a8">play</button> and thoughtful design.
             </h4>
          </section>
 

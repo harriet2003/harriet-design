@@ -32,7 +32,7 @@ img {
     border-radius: 0.75rem;
 }
 
-video{
+video {
     border-radius: 0.75rem;
     margin-block: 1rem;
 }
@@ -47,23 +47,6 @@ video{
 
 .button:hover {
     background-color: var(--pink);
-}
-
-/* NAVBAR */
-nav {
-    height: 72px;
-    max-width: 100%;
-    margin-inline: 1rem;
-    padding: 1rem 0.5rem 0 0.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-nav img {
-    height: 75%;
 }
 
 
@@ -119,7 +102,7 @@ nav img {
 }
 
 .projectCard img {
-    width: 150px;
+    width: 66%;
     object-fit: cover;
     aspect-ratio: 2/3;
 }
@@ -221,7 +204,7 @@ nav img {
     gap: 1rem;
 }
 
-.projectContent{
+.projectContent {
     gap: 2rem;
 }
 

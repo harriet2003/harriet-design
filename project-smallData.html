@@ -3,17 +3,42 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Harriet Design | Beat the Binge</title>
+      <title>Harriet Design | Small Data</title>
       <link rel="stylesheet" href="css/style.css" />
       <link rel="stylesheet" href="css/typography.css" />
+      <link rel="stylesheet" href="CSS/navbar.css" />
+      <script src="js/script.js" defer></script>
       <script src="https://kit.fontawesome.com/2028364a6f.js" crossorigin="anonymous"></script>
    </head>
 
    <body>
       <header>
-         <nav>
+         <nav class="mobile-nav">
             <img class="logo" src="images/h-logo.png" alt="logo" />
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" onclick="openNav()"></i>
+
+            <!-- The overlay -->
+            <div id="myNav" class="overlay">
+               <!-- Button to close the overlay navigation -->
+               <i class="fa-solid fa-xmark closebtn" onclick="closeNav()"></i>
+
+               <!-- Overlay content -->
+               <div class="overlay-content">
+                  <a href="index.html">Home</a>
+                  <a href="about.html">About</a>
+                  <a href="projects.html" class="current">Projects</a>
+                  <a href="https://www.instagram.com/_artbyharriet/" target=”_blank”>Art</a>
+               </div>
+            </div>
+         </nav>
+
+         <nav class="desktop-nav">
+            <img class="logo" src="images/h-logo.png" alt="logo" />
+            <div>
+               <a href="about.html">About</a>
+               <a href="projects.html">Projects</a>
+               <a href="https://www.instagram.com/_artbyharriet/" target=”_blank”>Art</a>
+            </div>
          </nav>
       </header>
 
@@ -45,7 +70,7 @@
             </div>
          </section>
 
-         <img class="fullWidthImage" src="images/smallData/data-title.jpg" alt="image of data title" />
+         <img class="fullWidthImage" src="images/smallData/data-title.png" alt="image of data title" />
 
          <section class="projectContent">
             <div>
@@ -80,8 +105,7 @@
                Your browser does not support the video tag.
             </video>
 
-            <!--Put installation sketches here-->
-            <img src="images/bud/bud-sketches.jpg" alt="sketches of mobile layout" />
+            <img src="images/smallData/data-sketches.jpg" alt="sketch exploration of installation" />
 
             <div>
                <p>
@@ -91,10 +115,10 @@
                </p>
             </div>
 
-            <img src="images/smallData/data-key.jpg" alt="data portrait kay" />
+            <img src="images/smallData/data-key.jpg" alt="data portrait key" />
          </section>
 
-         <img class="fullWidthImage" src="images/smallData/data-computer.jpg" alt="mockup of computer screens" />
+         <img class="fullWidthImage" src="images/smallData/data-homepage.jpg" alt="mockup of computer screens" />
 
          <section class="projectContent">
             <div>
@@ -110,8 +134,8 @@
                could create an enjoyable and calming experience for the user.  
             </p>
 
-            <img src="images/smallData/data-survey.jpg" alt="image of survey" />
-            
+            <img src="images/smallData/data-survey.png" alt="image of survey" />
+
             <p>
                A challenge faced was writing the questions for the survey. Gratitude is very personal to each person - it is difficult to measure the
                qualitative nature with numbers and algorithms. From these survey answers, using the p5.js library, a unique patterned symbol was
@@ -119,7 +143,7 @@
                through shared experiences.     
             </p>
 
-            <img src="images/smallData/data-badge.jpg" alt="Mockup of data portrait badges" />
+            <img src="images/smallData/badge-mockup.jpg" alt="Mockup of data portrait badges" />
 
             <p>
                Data humanism embraces the complexity of life, moves beyond standards and can uncover meaningful insights about our world. The series
@@ -128,7 +152,7 @@
             </p>
          </section>
 
-         <img class="fullWidthImage" src="images/smallData/data-wall.jpg" alt="image of data portriats" />
+         <img class="fullWidthImage" src="images/smallData/data-wall.png" alt="image of data portriats" />
 
          <section class="nextProjectBar">
             <a href="project-bud.html">← Previous</a>

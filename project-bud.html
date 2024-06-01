@@ -6,14 +6,39 @@
       <title>Harriet Design | Bud</title>
       <link rel="stylesheet" href="css/style.css" />
       <link rel="stylesheet" href="css/typography.css" />
+      <link rel="stylesheet" href="CSS/navbar.css" />
+      <script src="js/script.js" defer></script>
       <script src="https://kit.fontawesome.com/2028364a6f.js" crossorigin="anonymous"></script>
    </head>
 
    <body>
       <header>
-         <nav>
+         <nav class="mobile-nav">
             <img class="logo" src="images/h-logo.png" alt="logo" />
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" onclick="openNav()"></i>
+
+            <!-- The overlay -->
+            <div id="myNav" class="overlay">
+               <!-- Button to close the overlay navigation -->
+               <i class="fa-solid fa-xmark closebtn" onclick="closeNav()"></i>
+
+               <!-- Overlay content -->
+               <div class="overlay-content">
+                  <a href="index.html">Home</a>
+                  <a href="about.html">About</a>
+                  <a href="projects.html" class="current">Projects</a>
+                  <a href="https://www.instagram.com/_artbyharriet/" target="”_blank”">Art</a>
+               </div>
+            </div>
+         </nav>
+
+         <nav class="desktop-nav">
+            <img class="logo" src="images/h-logo.png" alt="logo" />
+            <div>
+               <a href="about.html">About</a>
+               <a href="projects.html">Projects</a>
+               <a href="https://www.instagram.com/_artbyharriet/" target="”_blank”">Art</a>
+            </div>
          </nav>
       </header>
 

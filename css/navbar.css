@@ -1,0 +1,96 @@
+:root {
+    --maroon: #6b0002;
+    --blue: #c3d5fd;
+    --orange: #f5773b;
+    --pink: #f2b5a8;
+    --peach: #fde0d2;
+    --grey: #F5F5F5;
+}
+
+
+nav {
+    height: 72px;
+    max-width: 100%;
+    margin-inline: 1rem;
+    padding: 1rem 0.5rem 0 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav i {
+    font-size: 1.75rem;
+}
+
+nav img {
+    height: 100%;
+}
+
+/* The Overlay (background) */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    background-color: var(--grey);
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.overlay-content a {
+    color: black;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.closebtn {
+    color: black;
+    font-size: 1.75rem;
+    padding: 2rem 1.5rem 0 0;
+    float: right;
+    transition: 0.5s;
+}
+
+.current {
+    color: var(--maroon) !important;
+}
+
+.desktop-nav {
+    display: none;
+}
+
+
+/*DESKTOP LAYOUT*/
+@media screen and (width > 768px) {
+    .mobile-nav {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+}
