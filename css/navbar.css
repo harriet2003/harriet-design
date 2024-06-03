@@ -91,6 +91,26 @@ nav img {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
+        max-width: 100%;
+    }
+
+    .desktop-nav div{
+        display: flex;
+        gap: 3rem;
+    }
+
+    .desktop-nav a {
+        font-family: "Lexend Deca", sans-serif;
+        font-weight: 400;
+        font-size: 1.24rem;
+    }
+
+    .desktop-nav a:hover {
+        color: rgba(0, 0, 0, 0.501);
+    }
+
+    .desktop-nav .current{
+        text-decoration: underline;
+        text-underline-offset: 0.5rem;
     }
 }
