@@ -182,6 +182,15 @@ footer a:hover {
         font-size: 4.5rem;
     }
 
+    .projectBlurb h3{
+        font-size: 4rem;
+    }
+
+    .projectBrief h4, .projectConclusion p{
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
     footer h4 {
         font-size: 1.5rem;
     }

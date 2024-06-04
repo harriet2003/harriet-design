@@ -22,19 +22,19 @@ function closeNav() {
 }
 
 /*--Project Redirect Buttons--*/
-const budRedirect = document.querySelector(".budProjectDiv");
+const budRedirect = document.querySelector(".budProjectCard");
 
 budRedirect.addEventListener("click", function () {
    window.location.href = "./project-bud.html";
 });
 
-const smallDataRedirect = document.querySelector(".smallDataProjectDiv");
+const smallDataRedirect = document.querySelector(".smallDataProjectCard");
 
 smallDataRedirect.addEventListener("click", function () {
    window.location.href = "./project-smallData.html";
 });
 
-const btbRedirect = document.querySelector(".btbProjectDiv");
+const btbRedirect = document.querySelector(".btbProjectCard");
 
 btbRedirect.addEventListener("click", function () {
    window.location.href = "./project-beatTheBinge.html";
