@@ -32,6 +32,10 @@ img {
     border-radius: 0.75rem;
 }
 
+.hideOnMobile{
+    display: none;
+}
+
 video {
     border-radius: 0.75rem;
     margin-block: 1rem;
@@ -233,18 +237,16 @@ video {
     margin: 0;
 }
 
-#changeRatio {
-    aspect-ratio: 2/3;
-    object-fit: cover;
-}
-
 .lastImage {
     margin-top: 3rem;
 }
 
 .nextProjectBar {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between !important;
+    align-items: center;
+    width: 100%;
 }
 
 
@@ -269,6 +271,10 @@ footer div:first-child {
 @media screen and (width > 768px) {
     section {
         padding-inline: 4rem;
+    }
+
+    .hideOnMobile{
+        display: unset;
     }
 
     /*HOME PAGE */
@@ -345,151 +351,9 @@ footer div:first-child {
         width: 60%;
     }
 
-    /* INDIVIDUAL PROJECTS */
-
-    .projectBio {
-        width: 90%;
-        height: 80vh;
-        margin: 0 auto;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .projectContent {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .projectBlurb {
-        justify-content: space-around;
-        margin-right: 4rem;
-    }
-
-    .projectBio img {
-        max-width: 50%;
-        aspect-ratio: 3/2;
-        object-fit: cover;
-    }
-
-    .projectBrief {
-        text-align: center;
-        padding-block: 4rem;
-        width: 50%;
-        margin: 0 auto;
-    }
-
-    /* Project Problem */
-    .projectProblem {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        margin-block: 4rem;
-    }
-
-    .projectProblem div {
-        width: 40%;
-    }
-
-    .projectProblem img {
-        width: 50%;
-    }
-
-    /* Project Process */
-    .projectProcess {
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 5rem;
-        align-items: flex-start;
-        max-width: 100%;
-    }
-
-    .projectProcess div {
-        margin-top: 5rem;
-    }
-
-    .projectProcess div img {
-        margin-top: 4rem;
-        width: 100%;
-    }
-
-    .projectProcess img {
-        width: 50%;
-    }
-
-    /* Project Outcome */
-    .projectOutcome {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .projectOutcome article {
-        margin-top: 5rem;
-    }
-
-    .projectOutcome div {
-        display: flex;
-        flex-direction: row;
-        gap: 5rem;
-        align-items: flex-start;
-        max-width: 100%;
-    }
-
-    .projectOutcome img {
-        width: 50%;
-    }
-
-    .projectOutcome2 {
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 5rem;
-        align-items: flex-start;
-        max-width: 100%;
-        margin-top: 5rem;
-    }
-
-    .projectOutcome2 div {
-        width: 40%;
-        margin-top: 5rem;
-    }
-
-    .projectOutcome2 img {
-        width: 50%;
-    }
-
-    #changeRatio {
-        width: 80%;
-        aspect-ratio: 3/2;
-        margin-block: 4rem;
-    }
-
-    /* PROJECT CONCLUSION */
-    .projectConclusion{
-        width: 50%;
-        height: 66vh;
-        place-content: center;
-    }
-
-    .fullWidthImage {
-        height: 100vh;
-        width: 90%;
-        margin: 2rem 4rem;
-        object-fit: cover;
-        border-radius: 0.75rem;
-    }
-
-    .lastImage{
-        width: 100%;
-        margin: 0;
-        border-radius: 0;
-        height: 80vh;
-    }
-
     footer {
         height: 400px;
         padding-inline: 2rem;
-        margin-top: 3rem;
     }
 
     footer div:nth-child(2) {

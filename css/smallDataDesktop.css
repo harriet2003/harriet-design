@@ -1,0 +1,148 @@
+@media screen and (width > 768px) {
+    .projectBio {
+        width: 90%;
+        height: 80vh;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .projectContent {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .projectBlurb {
+        justify-content: space-around;
+        margin-right: 4rem;
+    }
+
+    .projectBio img {
+        max-width: 50%;
+        aspect-ratio: 3/2;
+        object-fit: cover;
+    }
+
+    .projectBrief {
+        text-align: center;
+        padding-block: 4rem;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    /* Project Problem */
+    .projectProblem {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-block: 4rem;
+    }
+
+    .projectProblem div {
+        width: 40%;
+    }
+
+    .projectProblem img {
+        width: 50%;
+    }
+
+    /* Project Process */
+    .projectProcess {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 5rem;
+        align-items: flex-start;
+        max-width: 100%;
+    }
+
+    .projectProcess div {
+        margin-top: 5rem;
+    }
+
+    .projectProcess div img {
+        margin-top: 4rem;
+        width: 100%;
+    }
+
+    .projectProcess img {
+        width: 50%;
+    }
+
+    /* Project Outcome */
+    .projectOutcome {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .projectOutcome article {
+        margin-top: 5rem;
+        width: 40%;
+    }
+
+    .projectOutcome article img {
+        width: 120% !important;
+        margin-top: 200px;
+    }
+
+    .projectOutcome div {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: 100%;
+        margin-top: 5rem;
+    }
+
+    .projectOutcome div img {
+        width: 40%;
+    }
+
+    #smallerWidth {
+        width: 66%;
+    }
+
+    .projectOutcome2 {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 5rem;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: 100%;
+        margin-top: 10rem;
+    }
+
+    .projectOutcome2 div {
+        width: 40%;
+        margin-top: 5rem;
+    }
+
+    .projectOutcome2 img {
+        width: 50%;
+    }
+
+    /* PROJECT CONCLUSION */
+    .projectConclusion {
+        width: 50%;
+        height: 66vh;
+        place-content: center;
+    }
+
+    .fullWidthImage {
+        height: 100vh;
+        width: 90%;
+        margin: 2rem 4rem;
+        object-fit: cover;
+        border-radius: 0.75rem;
+    }
+
+    .lastImage {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        height: 80vh;
+    }
+
+}
