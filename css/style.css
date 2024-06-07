@@ -39,6 +39,7 @@ img {
 video {
     border-radius: 0.75rem;
     margin-block: 1rem;
+    width: 100%;
 }
 
 .button {
@@ -275,6 +276,10 @@ footer div:first-child {
 
     .hideOnMobile{
         display: unset;
+    }
+
+    .hideOnDesktop{
+        display: none;
     }
 
     /*HOME PAGE */
