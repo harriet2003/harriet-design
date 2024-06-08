@@ -87,53 +87,72 @@
         width: 70%;
     }
 
-    .projectImagesOnly {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 100%;
-        height: 80vh;
-        margin-block: 5rem;
-    }
-
     /* Project Outcome */
     .projectSolution {
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: row-reverse;
         justify-content: space-between;
-        gap: 5rem;
         margin-bottom: 5rem;
+        gap: 7rem;
     }
 
-    .projectSolution img{
+    .projectSolution div{
+        margin-top: 5rem;
         width: 50%;
     }
 
-    .projectOutcome2 {
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 5rem;
-        align-items: flex-start;
-        justify-content: space-between;
-        max-width: 100%;
-        margin-top: 10rem;
-    }
-
-    .projectOutcome2 div {
-        width: 40%;
+    .projectSolution div img{
+        width: 100%;
         margin-top: 5rem;
     }
 
-    .projectOutcome2 img {
-        width: 50%;
+    .projectSolution div img{
+        width: 90%;
     }
 
-    /* PROJECT CONCLUSION */
-    .projectConclusion {
+    #mobileMockup{
+        width: 35%;
+    }
+
+    /* PROJECT VISUALS/CHALLENGE*/
+
+    .projectVisuals{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 7rem;
+    }
+
+    .projectVisuals div{
+        margin-top: 5rem;
+    }
+
+    .projectVisuals img{
         width: 50%;
-        height: 66vh;
-        place-content: center;
+        object-fit: cover;
+    }
+
+
+    .projectTools{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5rem;
+        gap: 7rem;
+    }
+
+    .projectTools img{
+        width: 40%;
+    }
+    
+
+    /* PROJECT CONCLUSION */
+
+    .projectConclusion {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5rem;
     }
 
     .fullWidthImage {
@@ -146,9 +165,9 @@
 
     .lastImage {
         width: 100%;
-        margin: 0;
+        margin: 4rem 0 0 0;
         border-radius: 0;
-        height: 80vh;
+        height: 70vh;
     }
 
 }
