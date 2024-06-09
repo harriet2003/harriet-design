@@ -1,4 +1,10 @@
 @media screen and (width > 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .projectBio {
         width: 90%;
         height: 80vh;
@@ -26,108 +32,74 @@
     .projectBrief {
         text-align: center;
         padding-block: 4rem;
-        width: 50%;
+        width: 66%;
         margin: 0 auto;
+    }
+
+    #pagesImage {
+        width: 80%;
+        height: auto;
     }
 
     /* Project Problem */
     .projectProblem {
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-block: 4rem;
+        width: 100%;
     }
 
     .projectProblem div {
         width: 40%;
     }
 
+    .projectProblem figure {
+        width: 40%;
+    }
+
     .projectProblem img {
-        width: 50%;
-    }
-
-    /* Project Process */
-    .projectProcess {
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 5rem;
-        align-items: flex-start;
-        max-width: 100%;
-    }
-
-    .projectProcess div {
-        margin-top: 5rem;
-    }
-
-    .projectProcess div img {
-        margin-top: 4rem;
         width: 100%;
     }
 
-    .projectProcess img {
-        width: 50%;
+    #zonesImage {
+        height: 80vh;
+        width: auto;
+        margin-block: 5rem 10rem;
     }
 
     /* Project Outcome */
     .projectOutcome {
         display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .projectOutcome article {
-        margin-top: 5rem;
-        width: 40%;
-    }
-
-    .projectOutcome article img {
-        width: 120% !important;
-        margin-top: 200px;
-    }
-
-    .projectOutcome div {
-        display: flex;
         flex-direction: row;
-        gap: 5rem;
-        align-items: flex-start;
         justify-content: space-between;
-        max-width: 100%;
-        margin-top: 5rem;
+        width: 90%;
+        gap: 5rem;
     }
 
-    .projectOutcome div img {
-        width: 40%;
-    }
-
-    #smallerWidth {
-        width: 66%;
-    }
-
-    .projectOutcome2 {
+    .projectOutcome div:first-child {
         display: flex;
-        flex-direction: row-reverse;
-        gap: 5rem;
-        align-items: flex-start;
-        justify-content: space-between;
-        max-width: 100%;
-        margin-top: 10rem;
-    }
-
-    .projectOutcome2 div {
-        width: 40%;
+        flex-direction: column;
         margin-top: 5rem;
+        width: 40%;
     }
 
-    .projectOutcome2 img {
+    .projectOutcome div:first-child img {
+        margin-block: 3rem 5rem;
+    }
+
+    .projectOutcome div:last-child {
         width: 50%;
     }
+
 
     /* PROJECT CONCLUSION */
+
     .projectConclusion {
-        width: 50%;
-        height: 66vh;
-        place-content: center;
+        display: flex;
+        justify-content: center;
+        margin-block: 5rem;
     }
 
     .fullWidthImage {
@@ -140,9 +112,9 @@
 
     .lastImage {
         width: 100%;
-        margin: 0;
+        margin: 4rem 0 0 0;
         border-radius: 0;
-        height: 80vh;
+        height: 70vh;
     }
 
 }

@@ -104,7 +104,8 @@ footer a:hover {
     margin: 0 auto;
 }
 
-.aboutBio h2, .contactSection h2{
+.aboutBio h2,
+.contactSection h2 {
     margin-block: 0 1rem;
 }
 
@@ -116,7 +117,7 @@ footer a:hover {
     margin: unset;
 }
 
-.projectSection h2{
+.projectSection h2 {
     margin-block: 0 3rem;
 }
 
@@ -126,8 +127,16 @@ footer a:hover {
     font-weight: 100;
 }
 
-.projectTags p{
+.projectTags p {
     margin-right: 2rem;
+}
+
+figcaption {
+    font-size: 0.5rem;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    font-style: italic;
 }
 
 /*DESKTOP LAYOUT*/
@@ -182,23 +191,28 @@ footer a:hover {
         font-size: 4.5rem;
     }
 
-    .projectBlurb h3{
+    .projectBlurb h3 {
         font-size: 4rem;
     }
 
-    .projectBrief h4{
+    .projectBrief h4 {
         font-size: 1.25rem;
         text-align: center;
     }
 
-    .projectConclusion p{
+    figcaption {
+        font-size: 0.75rem;
+
+    }
+
+    .projectConclusion p {
         font-size: 1.25rem;
         text-align: center;
         width: 50%;
     }
 
 
-    .nextProjectBar a{
+    .nextProjectBar a {
         font-size: 2rem;
     }
 

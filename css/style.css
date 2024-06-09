@@ -236,6 +236,11 @@ video {
     margin-block: 1rem;
 }
 
+.projectProblem img {
+    width: 100%;
+}
+
+
 .fullWidthImage {
     border-radius: 0;
     width: 100%;
