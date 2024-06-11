@@ -39,3 +39,13 @@ const btbRedirect = document.querySelector(".btbProjectCard");
 btbRedirect.addEventListener("click", function () {
    window.location.href = "./project-beatTheBinge.html";
 });
+
+/* Facts Toggle Button */
+function toggleFacts() {
+   var x = document.getElementById("factsPopup");
+   if (x.style.display === "none") {
+      x.style.display = "unset";
+   } else {
+      x.style.display = "none";
+   }
+}

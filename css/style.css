@@ -151,6 +151,32 @@ video {
     gap: 1rem;
 }
 
+#factsButton {
+    align-self: flex-end;
+    font-size: 0.75rem;
+    border-radius: 1.5rem;
+    padding: 0.5rem 1.25rem;
+    background-color: var(--peach);
+    margin-top: 5rem;
+}
+
+/* Fact Popup */
+#factsButton:hover {
+    background-color: var(--pink) !important;
+}
+
+#factsPopup {
+    background-image: url("../images/flowers-mobile.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 80%;
+    position: absolute;
+    z-index: 2;
+    top: 350px;
+}
+
 .contactSection {
     text-align: center;
     display: flex;
@@ -229,22 +255,25 @@ video {
 }
 
 .projectContent {
-    gap: 2rem;
+    gap: 3rem;
+}
+
+.projectBrief {
+    margin-bottom: 3rem;
 }
 
 .projectContent img {
-    margin-block: 1rem;
+    margin-block: 3rem;
 }
 
 .projectProblem img {
     width: 100%;
 }
 
-
 .fullWidthImage {
     border-radius: 0;
     width: 100%;
-    margin: 0;
+    margin-block: 2rem 0;
 }
 
 .lastImage {
@@ -339,6 +368,13 @@ footer div:first-child {
     .aboutBio div:nth-child(2),
     .portrait {
         width: 50%;
+    }
+
+    #factsPopup {
+        background-image: url("../images/flowers-desktop.png");
+        width: 66%;
+        top: 5%;
+        left: 17%;
     }
 
     .contactSection {

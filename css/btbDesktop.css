@@ -86,7 +86,7 @@
     }
 
     .projectOutcome div:first-child img {
-        margin-block: 3rem 5rem;
+        margin-block: 5rem;
     }
 
     .projectOutcome div:last-child {
@@ -99,7 +99,7 @@
     .projectConclusion {
         display: flex;
         justify-content: center;
-        margin-block: 5rem;
+        margin-block: 3rem 5rem;
     }
 
     .fullWidthImage {
