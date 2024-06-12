@@ -4,7 +4,7 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Harriet Design</title>
-      <link rel="icon" type="image/x-icon" href="images/h-logo.png">
+      <link rel="icon" type="image/x-icon" href="images/h-logo.png" />
       <link rel="stylesheet" href="css/style.css" />
       <link rel="stylesheet" href="css/typography.css" />
       <link rel="stylesheet" href="css/navbar.css" />
@@ -47,13 +47,13 @@
             <p class="capitalise">welcome to my corner of the internet</p>
          </div>
 
-         <i class="fa-solid fa-arrow-down arrow"></i>
+         <a href="#scrollDown" class="arrow"><img src="images/arrow.gif" /></a>
       </header>
 
       <main>
-         <section class="bio">
-            <h2 class="capitalise">Lets create something cool.</h2>
-            <h4>
+         <section class="bio" id="scrollDown">
+            <h2 class="capitalise hidden">Lets create something cool.</h2>
+            <h4 class="hidden">
                I’m Harriet, an Auckland-based designer specialising in UX and UI. I design with <button style="color: #6b0002">empathy</button>,
                <button style="color: #c3d5fd">connecting</button> with people through <button style="color: #f2b5a8">play</button> and thoughtful
                design.
@@ -61,21 +61,21 @@
          </section>
 
          <section class="services">
-            <p class="capitalise">Services Include</p>
-            <h2>UX/UI Design, Web Design, Brand Identity, Graphic Design, Social Media Design, Data Visualisation, Campaign Design</h2>
+            <p class="capitalise hidden">Services Include</p>
+            <h2 class="hidden">UX/UI Design, Web Design, Brand Identity, Graphic Design, Social Media Design, Data Visualisation, Campaign Design</h2>
             <!--image 1-->
             <!--image 2-->
             <!--image 3-->
             <!--image 4-->
          </section>
 
-         <section class="projectSection">
+         <section class="projectSection hidden">
             <h2>Projects</h2>
 
-            <div class="projectCards">
+            <div class="projectCards hidden2">
                <div class="projectCard budProjectCard">
                   <h5>2023</h5>
-                  <img src="images/bud/bud-phones.jpg" alt="Mockup of Bud interface on phones" />
+                  <img src="images/bud/bud-phones.jpg" alt="Mockup of Bud interface on phones" class="imgAnimation" />
                   <div class="projectTags">
                      <span>UX/UI</span>
                      <span>Graphic</span>
@@ -84,9 +84,9 @@
                   <h3>Bud</h3>
                </div>
 
-               <div class="projectCard smallDataProjectCard">
+               <div class="projectCard smallDataProjectCard hidden2">
                   <h5>2023</h5>
-                  <img src="images/smallData/computer-mockup.jpg" alt="Mockup of Small Data computer screen" />
+                  <img src="images/smallData/computer-mockup.jpg" alt="Mockup of Small Data computer screen" class="imgAnimation" />
                   <div class="projectTags">
                      <span>Data Driven</span>
                      <span>Experimental</span>
@@ -95,9 +95,9 @@
                   <h3>Small Data</h3>
                </div>
 
-               <div class="projectCard btbProjectCard">
+               <div class="projectCard btbProjectCard hidden2">
                   <h5>2024</h5>
-                  <img src="images/beatTheBinge/btb-mobile mockups.jpg" alt="Beat the Binge mobile mockup" />
+                  <img src="images/beatTheBinge/btb-mobile mockups.jpg" alt="Beat the Binge mobile mockup" class="imgAnimation" />
                   <div class="projectTags">
                      <span>UX/UI</span>
                      <span>Campaign</span>

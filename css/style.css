@@ -31,6 +31,11 @@ img {
     border-radius: 0.75rem;
 }
 
+.imgAnimation:hover {
+    border-radius: 4rem;
+    transition: 0.25s ease-in-out;
+}
+
 .hideOnMobile {
     display: none;
 }
@@ -54,6 +59,39 @@ video {
     cursor: pointer;
 }
 
+/* ANIMATION */
+.hidden {
+    opacity: 0;
+    transform: translateY(25%);
+    transition: all 1s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hidden2 {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-20%);
+    transition: all 1.5s ease-in-out;
+    transition-delay: 0.5s;
+}
+
+.show2 {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+@media (prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
 
 /* HOME PAGE */
 .landing {
@@ -75,6 +113,10 @@ video {
 .landing .arrow {
     margin-block: 1rem 3rem;
     align-self: center;
+}
+
+.arrow img{
+    height: 3rem;
 }
 
 .bio {
@@ -288,6 +330,12 @@ video {
     justify-content: space-between !important;
     align-items: center;
     width: 100%;
+}
+
+#dataCards {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
 }
 
 
