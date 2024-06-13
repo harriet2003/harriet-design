@@ -40,7 +40,7 @@ img {
     display: none;
 }
 
-video {
+#dataGIF {
     border-radius: 0.75rem;
     margin-block: 1rem;
     width: 100%;
@@ -343,7 +343,7 @@ video {
 /* FOOTER */
 footer {
     background-color: var(--blue);
-    height: 300px;
+    height: fit-content;
     padding: 2rem 1rem 1rem 1rem;
     display: flex;
     flex-direction: column;
@@ -354,6 +354,15 @@ footer div:first-child {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+footer .disclaimer{
+    width: 66%;
+    font-size: 0.5rem;
+    text-align: center;
+    align-self: center;
+    margin-top: 2rem;
 }
 
 
@@ -464,6 +473,11 @@ footer div:first-child {
         max-width: 100%;
         justify-content: space-between;
         align-items: baseline;
+    }
+
+    footer .disclaimer{
+        font-size: 0.75rem;
+        width: 50%;
     }
 
 }
