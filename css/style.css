@@ -75,7 +75,7 @@ video {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-20%);
-    transition: all 1.5s ease-in-out;
+    transition: all 1s ease-in-out;
     transition-delay: 0.5s;
 }
 
@@ -208,6 +208,7 @@ video {
 }
 
 #factsPopup {
+    display: none;
     background-image: url("../images/flowers-mobile.png");
     background-position: center;
     background-size: contain;
