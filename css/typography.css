@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lexend+Deca:wght@100..900&display=swap');
+
 :root {
     --maroon: #6b0002;
     --blue: #c3d5fd;
@@ -5,10 +9,6 @@
     --pink: #f2b5a8;
     --peach: #fde0d2;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lexend+Deca:wght@100..900&display=swap');
 
 h1 {
     font-size: 5rem;

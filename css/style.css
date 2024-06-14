@@ -19,11 +19,11 @@ body {
     margin: 0;
 }
 
-.marginTop{
+.marginTop {
     padding-top: 72px;
 }
 
-.marginTop2{
+.marginTop2 {
     padding-top: 25%;
 }
 
@@ -48,7 +48,7 @@ img {
     display: none;
 }
 
-#dataGIF {
+video {
     border-radius: 0.75rem;
     margin-block: 1rem;
     width: 100%;
@@ -67,7 +67,7 @@ img {
     cursor: pointer;
 }
 
-#fixedButton{
+#fixedButton {
     position: fixed;
     z-index: 2;
     bottom: 1.5rem;
@@ -86,20 +86,6 @@ img {
 .show {
     opacity: 1;
     transform: translateY(0);
-}
-
-.hidden2 {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-20%);
-    transition: all 1s ease-in-out;
-    transition-delay: 0.5s;
-}
-
-.show2 {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
 }
 
 
@@ -132,7 +118,7 @@ img {
     align-self: center;
 }
 
-.arrow img{
+.arrow img {
     height: 3rem;
 }
 
@@ -151,6 +137,31 @@ img {
     padding: 0;
     cursor: pointer;
 }
+
+#empathyFlower,
+#connectFlower,
+#playFlower {
+    width: 50%;
+    position: absolute;
+    z-index: 2;
+    display: none;
+}
+
+
+#empathyFlower {
+    margin-bottom: 100px;
+}
+
+#connectFlower {
+    left: 40%;
+}
+
+#playFlower {
+    left: 33%;
+    margin-top: 200px;
+}
+
+
 
 .projectSection {
     margin-bottom: 5rem;
@@ -374,7 +385,7 @@ footer div:first-child {
     margin-bottom: 2rem;
 }
 
-footer .disclaimer{
+footer .disclaimer {
     width: 66%;
     font-size: 0.5rem;
     text-align: center;
@@ -385,7 +396,7 @@ footer .disclaimer{
 
 /*DESKTOP LAYOUT*/
 @media screen and (width > 768px) {
-    .marginTop2{
+    .marginTop2 {
         padding-top: 72px;
     }
 
@@ -401,7 +412,7 @@ footer .disclaimer{
         display: none;
     }
 
-    #fixedButton{
+    #fixedButton {
         position: fixed;
         z-index: 2;
         bottom: 2rem;
@@ -413,6 +424,27 @@ footer .disclaimer{
     /*HOME PAGE */
     .bio {
         height: 90vh;
+    }
+
+    #empathyFlower,
+    #connectFlower,
+    #playFlower {
+        width: 20%;
+    }
+
+    #empathyFlower {
+        left: 33%;
+        margin-bottom: 150px;
+    }
+
+    #connectFlower {
+        left: 66%;
+        margin-bottom: 50px;
+    }
+
+    #playFlower {
+        left: 25%;
+        margin-top: 200px;
     }
 
     .projectSection {
@@ -441,6 +473,20 @@ footer .disclaimer{
 
     .services {
         margin-block: 4rem 2rem;
+    }
+
+    .hidden2 {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(-20%);
+        transition: all 1s ease-in-out;
+        transition-delay: 0.5s;
+    }
+
+    .show2 {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
     }
 
     /* ABOUT PAGE */
@@ -505,7 +551,7 @@ footer .disclaimer{
         align-items: baseline;
     }
 
-    footer .disclaimer{
+    footer .disclaimer {
         font-size: 0.75rem;
         width: 50%;
     }
