@@ -102,7 +102,9 @@ video {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
 }
 
 #title {
@@ -115,7 +117,6 @@ video {
 
 .landing .arrow {
     margin-block: 1rem 3rem;
-    align-self: center;
 }
 
 .arrow img {
@@ -161,7 +162,40 @@ video {
     margin-top: 200px;
 }
 
+.services img {
+    z-index: 2;
+    position: absolute;
+    border-radius: 0.3rem;
+}
 
+.services img:first-child {
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    width: 50px;
+    margin-top: -60px;
+}
+
+.services img:nth-child(2) {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 45px;
+    margin-top: -20px;
+}
+
+.services img:nth-child(3) {
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    width: 75px;
+    margin-top: 35px;
+    margin-left: 60px;
+}
+
+.services img:nth-child(4) {
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    width: 75px;
+    margin-top: 35px;
+}
 
 .projectSection {
     margin-bottom: 5rem;
@@ -228,6 +262,7 @@ video {
     padding: 0.5rem 1.25rem;
     background-color: var(--peach);
     margin-top: 5rem;
+    color: black;
 }
 
 /* Fact Popup */
@@ -445,6 +480,29 @@ footer .disclaimer {
     #playFlower {
         left: 25%;
         margin-top: 200px;
+    }
+
+    .services img:first-child {
+        width: 100px;
+        margin-top: -120px;
+    }
+
+    .services img:nth-child(2) {
+        width: 75px;
+        margin-top: -30px;
+        margin-left: -50px;
+    }
+
+    .services img:nth-child(3) {
+        width: 150px;
+        margin-top: -50px;
+        margin-left: 320px;
+    }
+
+    .services img:nth-child(4) {
+        width: 150px;
+        margin-top: 70px;
+        margin-left: -500px;
     }
 
     .projectSection {
