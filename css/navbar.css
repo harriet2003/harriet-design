@@ -85,7 +85,6 @@ nav img {
     display: none;
 }
 
-
 /*DESKTOP LAYOUT*/
 @media screen and (width > 768px) {
     .mobile-nav {
