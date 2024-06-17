@@ -110,8 +110,13 @@
         width: 66%;
     }
 
-    video{
+    video {
         width: 33%;
+    }
+
+    #videoFlower {
+        right: 40px;
+        top: 4100px;
     }
 
     /* PROJECT VISUALS */
