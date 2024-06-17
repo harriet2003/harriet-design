@@ -89,13 +89,13 @@
 
     .projectSolution article img {
         width: 120% !important;
-        margin-top: 200px;
+        margin-top: 120px;
     }
 
     .projectSolution div {
         display: flex;
         flex-direction: row;
-        gap: 5rem;
+        gap: 3rem;
         align-items: flex-start;
         justify-content: space-between;
         max-width: 100%;
@@ -108,6 +108,10 @@
 
     #smallerWidth {
         width: 66%;
+    }
+
+    video{
+        width: 33%;
     }
 
     /* PROJECT VISUALS */
