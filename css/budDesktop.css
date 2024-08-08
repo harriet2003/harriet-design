@@ -89,7 +89,6 @@
 
     .projectSolution article img {
         width: 120% !important;
-        margin-top: 120px;
     }
 
     .projectSolution div {
@@ -112,11 +111,6 @@
 
     video {
         width: 33%;
-    }
-
-    #videoFlower {
-        right: 40px;
-        top: 4100px;
     }
 
     /* PROJECT VISUALS */

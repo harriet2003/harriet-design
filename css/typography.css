@@ -79,6 +79,10 @@ footer h2 {
     margin-block: 0 1rem;
 }
 
+footer .socialLinks{
+    font-size: 1.25rem;
+}
+
 footer a:hover {
     color: white;
 }
@@ -91,6 +95,9 @@ footer a:hover {
     color: var(--maroon);
 }
 
+.bio h2{
+    font-size: 2rem;
+}
 .bio button {
     font-size: 1.25rem;
     font-family: "Lexend Deca", sans-serif;
@@ -178,7 +185,7 @@ figcaption {
     }
 
     .bio h2 {
-        font-size: 4.5rem;
+        font-size: 3.75rem;
         margin-bottom: 2rem;
     }
 
@@ -214,6 +221,10 @@ figcaption {
 
     .nextProjectBar a {
         font-size: 2rem;
+    }
+
+    footer .socialLinks{
+        font-size: 1.75rem;
     }
 
     footer h4 {
