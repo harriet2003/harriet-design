@@ -261,6 +261,7 @@ video {
 
 #factsButton {
     align-self: flex-end;
+    min-width: 110px;
     font-size: 0.75rem;
     border-radius: 1.5rem;
     padding: 0.5rem 1.25rem;
@@ -423,7 +424,7 @@ footer div:first-child {
     margin-bottom: 2rem;
 }
 
-footer .socialLinks{
+footer .socialLinks {
     margin-top: 1rem;
     display: flex;
     gap: 1rem;

@@ -73,7 +73,10 @@ function toggleFacts() {
    var x = document.getElementById("factsPopup");
    if (x.style.display === "none") {
       x.style.display = "unset";
+      document.getElementById("factsButton").innerText = "x";
+
    } else {
       x.style.display = "none";
+      document.getElementById("factsButton").innerText = "Fun Facts";
    }
 }
