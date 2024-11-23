@@ -21,10 +21,8 @@
 
             <!-- The overlay -->
             <div id="myNav" class="overlay">
-               <!-- Button to close the overlay navigation -->
                <i class="fa-solid fa-xmark closebtn" onclick="closeNav()"></i>
 
-               <!-- Overlay content -->
                <div class="overlay-content">
                   <a href="index.html">Home</a>
                   <a href="projects.html">Projects</a>
@@ -46,30 +44,29 @@
       </header>
 
       <main>
-         <section class="peachBackground aboutBio">
-            <div class="portrait marginTop">
+         <section class="aboutBio">
+            <div class="portrait">
                <img src="images/me-photo.jpg" alt="Photo of Harriet" />
+               <p class="capitalise">Hover over my face for some facts</p>
             </div>
 
             <div>
-               <p class="capitalise" style="margin-bottom: 1rem">Meet the designer</p>
-               <h2>Hi, I'm Harriet!</h2>
+               <h3>A little about me</h3>
+               <p>
+                  Hi, I'm Harriet, an Auckland-based designer specialising in UX and UI. I design with empathy, connecting with people through play
+                  and thoughtful design. I am passionate about creating beautiful and purposeful experiences that encourage positive change in the
+                  world.
+               </p>
                <p>
                   I have always loved the creative field, and for as long as I can remember, been drawing, crafting and creating. From handmade
                   birthday cards and bedazzled notebooks, my skills have transferred to a more digital world since discovering a passion for design.
                </p>
                <p>
-                  Studying a Bachelor of Media Design at Media Design School in Auckland unlocked my love for UX/UI design. I learnt many things
-                  throughout my studies, but one key takeaway was the importance of connection - with clients, colleagues and consumers to create
-                  beautiful experiences that are purposeful and encourage positive change in the world.
+                  When I'm not sitting at my desk (or bed) you can find me getting creative other ways with pen and paper. I am most happy by the
+                  ocean, love traveling, good food, reading and taking my dog Clemmie for walks.
                </p>
 
-               <button id="factsButton" class="capitalise button" onclick="toggleFacts()">Fun Facts</button>
-            </div>
-
-            <!--Facts popup-->
-            <div id="factsPopup">
-               <p></p>
+               <img id="coffeeLogo" src="images/coffeeLogo.png" alt="coffee logo" />
             </div>
          </section>
 
@@ -87,39 +84,22 @@
                <img src="images/smallData/computer-mockup.jpg" alt="image of small data interface" /> Design, Visual Art
             </h2>
          </section>
-
-         <section class="peachBackground contactSection">
-            <h2>Want to chat?</h2>
-            <p>Interested in working together or just want to chat? <br />Shoot me an email and let’s create something together!</p>
-
-            <a href="mailto:harrieteglinton@gmail.com?subject=Hi Harriet, we would like to reach out!" class="button contactButton">Contact</a>
-         </section>
       </main>
 
-      <footer>
-         <div>
-            <p>Designing with empathy for people<br /></p>
+      <footer class="peachBackground">
+         <div class="contactSection">
+            <h2>Want to chat?</h2>
+            <p>Interested in working together or just want to chat? <br />Shoot me a message and let’s create something together!</p>
 
             <div class="socialLinks">
-               <a href="mailto:harrieteglinton@gmail.com?subject=Hi Harriet, we would like to reach out! ⭐️"
+               <a href="mailto:hattieeglinton@gmail.com?subject=Hi Harriet, we would like to reach out! ⭐️"
                   ><i class="fa-regular fa-envelope"></i
                ></a>
                <a href="https://www.linkedin.com/in/harriet-eglinton/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                <a href="https://www.instagram.com/harrietdesign/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             </div>
          </div>
-
-         <div>
-            <a href="#scrollHere"
-               ><h4>Scroll to top <i class="fa-solid fa-arrow-up"></i></h4
-            ></a>
-            <h2>Harriet <i>Design</i></h2>
-         </div>
-
-         <p class="disclaimer">
-            Disclaimer: The work contained in this portfolio is created for educational purposes only and does not contain any commercial value. All
-            rights remain with the individual copyright holders unless specified and used with permission.
-         </p>
+         <p class="copyright">Copyright © Harriet Design 2024</p>
       </footer>
    </body>
 </html>

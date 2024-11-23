@@ -9,151 +9,22 @@
       <link rel="stylesheet" href="css/typography.css" />
       <link rel="stylesheet" href="css/navbar.css" />
       <script src="js/script.js" defer></script>
-      <script src="js/scroll.js" defer></script>
       <script src="https://kit.fontawesome.com/2028364a6f.js" crossorigin="anonymous"></script>
    </head>
 
-   <body>
-      <header class="landing peachBackground" id="scrollHere">
-         <nav class="mobile-nav">
-            <img class="navLogo" src="images/h-logo.png" alt="logo" />
-            <i class="fa-solid fa-bars" onclick="openNav()"></i>
-
-            <!-- The overlay -->
-            <div id="myNav" class="overlay">
-               <!-- Button to close the overlay navigation -->
-               <i class="fa-solid fa-xmark closebtn" onclick="closeNav()"></i>
-
-               <!-- Overlay content -->
-               <div class="overlay-content">
-                  <a href="index.html" class="current">Home</a>
-                  <a href="projects.html">Projects</a>
-                  <a href="about.html">About</a>
-                  <a href="https://www.instagram.com/_artbyharriet/" target="”_blank”">Art</a>
-               </div>
-            </div>
-         </nav>
-
-         <nav class="desktop-nav">
-            <img class="desktopNavLogo" src="images/h-logo.png" alt="logo" />
-            <div>
-               <a href="index.html" class="current">Home</a>
-               <a href="projects.html" class="dropbtn">Projects</a>
-               <a href="about.html">About</a>
-               <a href="https://www.instagram.com/_artbyharriet/" target="”_blank”">Art</a>
-            </div>
-         </nav>
-
+   <body class="landing peachBackground">
+      <main>
          <div id="title">
             <h1>Harriet <i>Design</i></h1>
-            <p class="capitalise">welcome to my corner of the internet</p>
-         </div>
-
-         <a href="#scrollDown" class="arrow"><img src="images/arrow.gif" /></a>
-      </header>
-
-      <main>
-         <a href="mailto:harrieteglinton@gmail.com.com?subject=Hi Harriet, we would like to reach out! ⭐️" class="button contactButton" id="fixedButton"
-            >Contact</a
-         >
-
-         <section class="bio" id="scrollDown">
-            <h2 class="capitalise hidden">Let's create something together.</h2>
-            <h4 class="hidden">
-               I’m Harriet, an Auckland-based designer specialising in UX and UI. I design with
-               <button style="color: #6b0002" id="empathyText">empathy</button>,
-               <button style="color: #759ffa" id="connectText">connecting</button> with people through
-               <button style="color: #f2b5a8" id="playText">play</button> and thoughtful design.
-            </h4>
-
-            <img src="images/empathy-flower.svg" id="empathyFlower" />
-            <img src="images/connect-flower.svg" id="connectFlower" />
-            <img src="images/play-flower.svg" id="playFlower" />
-         </section>
-
-         <section class="services hidden">
-            <p class="capitalise hidden">Services Include</p>
-
-            <h2 class="hidden">
-               UX/UI Design
-               <img src="images/bud/bud-phones.jpg" alt="image of bud interface" />
-               , Web Design, Brand Identity,
-               <img src="images/bud/bud-logo.png" alt="image of bud logo" />Graphic Design,<img
-                  src="images/bud/bud-poster.jpg"
-                  alt="image of bud bus stop poster" />
-               Social Media Design, Data Visualisation, Campaign
-               <img src="images/smallData/computer-mockup.jpg" alt="image of small data interface" /> Design, Visual Art
-            </h2>
-         </section>
-
-         <section class="projectSection hidden">
-            <h4 class="capitalise">Projects</h4>
-
-            <div class="projectCards hidden2">
-               <div class="projectCard budProjectCard">
-                  <h5>2023</h5>
-                  <img src="images/bud/bud-phones.jpg" alt="Mockup of Bud interface on phones" class="imgAnimation" />
-                  <div class="projectTags">
-                     <span>UX/UI</span>
-                     <span>Graphic</span>
-                     <span>Web Design</span>
-                  </div>
-                  <h3>Bud</h3>
-               </div>
-
-               <div class="projectCard smallDataProjectCard hidden2">
-                  <h5>2023</h5>
-                  <img src="images/smallData/computer-mockup.jpg" alt="Mockup of Small Data computer screen" class="imgAnimation" />
-                  <div class="projectTags">
-                     <span>Data Driven</span>
-                     <span>Experimental</span>
-                     <span>UX/UI</span>
-                  </div>
-                  <h3>Small Data</h3>
-               </div>
-
-               <div class="projectCard btbProjectCard hidden2">
-                  <h5>2024</h5>
-                  <div class="btbProjectImage">
-                     <img src="images/best-awards-pin.png" alt="best awards 2024 finalists pin" class="pin" />
-                     <img src="images/beatTheBinge/btb-mobile-mockups.jpg" alt="Beat the Binge mobile mockup" class="imgAnimation" />
-                  </div>
-
-                  <div class="projectTags">
-                     <span>UX/UI</span>
-                     <span>Campaign</span>
-                     <span>Project Lead</span>
-                  </div>
-                  <h3>Beat the Binge</h3>
-               </div>
+            <div id="landingNav">
+               <a href="projects.html">See my work</a>
+               <a href="about.html">A bit about me</a>
             </div>
-         </section>
+         </div>
       </main>
 
       <footer>
-         <div>
-            <p>Designing with empathy for people<br /></p>
-
-            <div class="socialLinks">
-               <a href="mailto:harrieteglinton@gmail.com?subject=Hi Harriet, we would like to reach out! ⭐️"
-                  ><i class="fa-regular fa-envelope"></i
-               ></a>
-               <a href="https://www.linkedin.com/in/harriet-eglinton/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-               <a href="https://www.instagram.com/harrietdesign/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-         </div>
-
-         <div>
-            <a href="#scrollHere"
-               ><h4>Scroll to top <i class="fa-solid fa-arrow-up"></i></h4
-            ></a>
-            <h2>Harriet <i>Design</i></h2>
-         </div>
-
-         <p class="disclaimer">
-            Disclaimer: The work contained in this portfolio is created for educational purposes only and does not contain any commercial value. All
-            rights remain with the individual copyright holders unless specified and used with permission.
-         </p>
+         <p class="copyright">Copyright © Harriet Design 2024</p>
       </footer>
    </body>
 </html>

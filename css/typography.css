@@ -65,6 +65,10 @@ a {
     cursor: pointer;
 }
 
+a:hover {
+    cursor: url("../images/cursor-pointer.png"), auto;
+}
+
 .button {
     font-family: "Lexend Deca", sans-serif;
     font-weight: 400;
@@ -75,54 +79,59 @@ a {
     text-transform: uppercase;
 }
 
-footer h2 {
-    margin-block: 0 1rem;
-}
-
-footer .socialLinks {
-    font-size: 1.25rem;
-}
-
-footer a:hover {
-    color: white;
-}
-
 
 /* Home Page */
-
-.landing div h1,
-#title p {
+#title {
     color: var(--maroon);
 }
 
-.bio h2 {
-    font-size: 2rem;
+#landingNav a {
+    color: var(--maroon);
+    font-family: "Lexend Deca", sans-serif;
+    text-transform: uppercase;
 }
 
-.bio button {
-    font-size: 1.25rem;
-    font-family: "Lexend Deca", sans-serif;
-    font-weight: 400;
+#landingNav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
 }
 
 /* About Page */
+.aboutBio h3 {
+    margin-block: 0.5rem;
+}
 
 .contactSection h5 {
     width: 80%;
     margin: 0 auto;
 }
 
-.aboutBio h2,
 .contactSection h2 {
-    margin-block: 0 1rem;
+    margin-block: 1rem;
+    font-size: 2.5rem;
 }
 
 /* Projects Page */
+.projectBlurb div:first-child p {
+    margin-top: 1rem;
+}
 
-.specialBodyFont {
-    font-family: "DM Serif Display", serif;
-    font-weight: 100;
-    margin: unset;
+#projectsHeader {
+    margin-left: 2rem;
+}
+
+#projectsHeader h2 {
+    margin-bottom: 0;
+    font-size: 3.25rem;
+}
+
+#projectsHeader h3 {
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+#projectText p {
+    font-size: 0.75rem;
 }
 
 .projectSection h4 {
@@ -147,11 +156,27 @@ figcaption {
     font-style: italic;
 }
 
+.copyright {
+    font-size: 0.66rem;
+}
+
+.socialLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem;
+}
+
+.socialLinks i {
+    font-size: 2rem;
+}
+
 /*DESKTOP LAYOUT*/
 @media screen and (width > 768px) {
     h1 {
-        font-size: 9rem;
-        line-height: 9rem;
+        font-size: 8rem;
+        line-height: 8rem;
     }
 
     h2 {
@@ -175,38 +200,49 @@ figcaption {
         font-size: 1rem;
     }
 
-    #title p {
-        font-size: 1.5rem;
+    #title {
+        width: 100%;
     }
 
-    .bio h2,
-    .bio h4 {
-        width: 50%;
-        margin: 0 auto;
+    #landingNav a {
+        font-size: 1.25rem;
     }
 
-    .bio h2 {
-        font-size: 3.75rem;
-        margin-bottom: 2rem;
-    }
-
-    .bio h4,
-    .bio button {
-        font-size: 1.5rem;
+    .aboutBio p {
+        width: 80%;
     }
 
     .services h2 {
         font-size: 4.5rem;
     }
 
+    .contactSection h2 {
+        font-size: 4rem;
+        margin-top: 0;
+    }
+
+    /*PROJECTS PAGE*/
     .projectBlurb h3 {
+        font-size: 3.5rem;
+    }
+
+    .projectBlurb h4 {
+        font-size: 1.25rem;
+    }
+
+    #projectsHeader h2 {
+        font-size: 5rem;
+    }
+
+    #projectsHeader h3 {
         font-size: 4rem;
     }
 
-    .projectBrief h4 {
-        font-size: 1.25rem;
-        text-align: center;
+    #projectText p {
+        font-size: 1rem;
     }
+
+
 
     figcaption {
         font-size: 0.75rem;
@@ -219,22 +255,7 @@ figcaption {
         width: 50%;
     }
 
-
     .nextProjectBar a {
         font-size: 2rem;
     }
-
-    footer .socialLinks {
-        font-size: 1.75rem;
-    }
-
-    footer h4 {
-        font-size: 1.5rem;
-    }
-
-    footer h2 {
-        margin-block: 0;
-    }
-
-
 }

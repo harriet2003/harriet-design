@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Harriet Design | Evergreen</title>
+      <link rel="icon" type="image/x-icon" href="images/h-logo.png" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/typography.css" />
+      <link rel="stylesheet" href="css/navbar.css" />
+      <link rel="stylesheet" href="css/evergreenDesktop.css" />
+      <script src="js/script.js" defer></script>
+      <script src="js/scroll.js" defer></script>
+      <script src="https://kit.fontawesome.com/2028364a6f.js" crossorigin="anonymous"></script>
+   </head>
+
+   <body>
+      <header>
+         <nav class="mobile-nav">
+            <img class="navLogo" src="images/h-logo.png" alt="logo" />
+            <i class="fa-solid fa-bars" onclick="openNav()"></i>
+
+            <!-- The overlay -->
+            <div id="myNav" class="overlay">
+               <!-- Button to close the overlay navigation -->
+               <i class="fa-solid fa-xmark closebtn" onclick="closeNav()"></i>
+
+               <!-- Overlay content -->
+               <div class="overlay-content">
+                  <a href="index.html">Home</a>
+                  <a href="projects.html" class="current">Projects</a>
+                  <a href="about.html">About</a>
+                  <a href="https://www.instagram.com/_artbyharriet/" target="”_blank”">Art</a>
+               </div>
+            </div>
+         </nav>
+
+         <nav class="desktop-nav">
+            <img class="desktopNavLogo" src="images/h-logo.png" alt="logo" />
+            <div>
+               <a href="index.html">Home</a>
+               <a href="projects.html" class="current">Projects</a>
+               <a href="about.html">About</a>
+               <a href="https://www.instagram.com/_artbyharriet/" target="”_blank”">Art</a>
+            </div>
+         </nav>
+      </header>
+
+      <main class="theProjectMain marginTop">
+         <section class="projectGalleryCard evergreenProjectCard">
+            <img src="images/evergreen/evergreen-hero.jpg" alt="Evergreen Hero Image" class="imgAnimation2" />
+            <div class="projectBlurb">
+               <div>
+                  <h3>Evergreen</h3>
+                  <p>
+                     An uplifting data-driven campaign foused on positivity and story telling to raise awareness on climate change and forest
+                     regeneration in New Zealand.
+                  </p>
+               </div>
+
+               <div class="projectTags">
+                  <p>2024</p>
+                  <span>Data Driven</span>
+                  <span>Campaign</span>
+                  <span>UX/UI</span>
+               </div>
+            </div>
+         </section>
+
+         <section class="projectContent hidden">
+            <div class="projectBrief">
+               <h5 class="capitalise">The Challenge</h5>
+               <p>
+                  Capstone allowed me the opportunity and freedom to create a body of work in a field within media design that explored a topic or
+                  problem I was passionate about. Coupling my expertise in UX/UI and love for the environment, this project explores how positive
+                  data-humanism-driven interactive experiences create hope to motivate young New Zealanders to protect and preserve our nature.
+               </p>
+            </div>
+         </section>
+
+         <img class="fullWidthImage hidden" src="images/evergreen/phones.jpg" alt="mockup of evergreen website on mobile phones" />
+
+         <section class="projectContent projectProblem">
+            <div>
+               <h5 class="capitalise">The Problem</h5>
+
+               <p>
+                  Our forests and green spaces are crucial in mitigating the impacts of climate change, providing homes to 80,000 native species in
+                  New Zealand, producing oxygen and acting as carbon sinks. Furthermore, nature benefits our mental and physical well-being, providing
+                  joy and connection.
+               </p>
+
+               <p>
+                  The consequences of long-overlooked climate destruction are starting to show - protecting New Zealand’s unique environment has never
+                  been more crucial than now. However, we often see information related to climate change concentrated on the doom and gloom
+                  narrative. Though highlighting the impacts of climate change is necessary, all the information can be debilitating, especially
+                  amongst Gen Z and Millennials who experience high levels of climate anxiety. A different approach is needed.
+               </p>
+            </div>
+
+            <img class="hidden" src="images/evergreen/instagram-posts.jpg" alt="mockup of three instagram posts" />
+         </section>
+
+         <section class="projectContent projectProcess">
+            <article>
+               <h5 class="capitalise">The Process</h5>
+               <p>
+                  Data humanism is a human-oriented approach to collecting and presenting information. Hence, understanding my user's motives and
+                  needs was the first step. These insights helped inform my solution, providing ideas and opportunities. One core insight was that my
+                  audience had limited time for sustainable actions, proving my solution had to be convenient. A digital experience became the core
+                  part of my campaign, investigating how I could create more meaningful data visualisations on the relationship between people and
+                  nature. This participatory data collection website was developed by mapping, sketching wireframes, building prototypes, testing and
+                  refining before I began development. Consistent iteration through these steps was an integral part of the process.
+               </p>
+
+               <img src="images/evergreen/sketches.jpg" alt="image of illustration sketches" class="hidden" />
+
+               <p class="hideOnMobile">
+                  However, during development, I realised the website was missing a hook. I devised many solutions to remedy this, but after
+                  recognising these features were beyond my coding capabilities, I returned to the drawing board, brainstorming how else I could
+                  communicate my message and expand my solution. Evergreen then became a campaign with new touch points that work alongside the
+                  website, supporting one another to advocate for change to protect our nature.
+               </p>
+            </article>
+
+            <img src="images/evergreen/user-testing.jpg" alt="image of user testing the website" class="hidden testingImage" />
+
+            <p class="hideOnDesktop">
+               However, during development, I realised the website was missing a hook. I devised many solutions to remedy this, but after recognising
+               these features were beyond my coding capabilities, I returned to the drawing board, brainstorming how else I could communicate my
+               message and expand my solution. Evergreen then became a campaign with new touch points that work alongside the website, supporting one
+               another to advocate for change to protect our nature.
+            </p>
+         </section>
+
+         <!--Slideshow of website slides-->
+         <div class="evergreen-carousel hidden">
+            <img src="./images/evergreen/homepage-screen.jpg" />
+            <img src="./images/evergreen/question-screen.jpg" />
+            <img src="./images/evergreen/about-screen.jpg" />
+            <img src="./images/evergreen/seedlingResult-screen.jpg" />
+            <img src="./images/evergreen/data-screen.jpg" />
+         </div>
+
+         <section class="projectContent projectOutcome">
+            <div>
+               <article>
+                  <h5 class="capitalise">The Outcome</h5>
+                  <p>
+                     Evergreen explores how capturing personal stories and presenting them in a comprehendible, interactive and beautiful way could
+                     create hope and bring change. The website - a participatory data collection experience - allows users to reflect on what nature
+                     means to them and share this with others. It's a reflective and delightful experience that juxtaposes traditional forms of data
+                     collection by focusing on storytelling.
+                  </p>
+
+                  <img src="images/evergreen/data-vis-mockup.jpg" alt="image of data visualisations" class="hidden" />
+
+                  <p>
+                     To expand Evergreen, social media content was designed and curated to directly reach the target audience and allow further
+                     engagement with the brand. This included a series of infographics that tell positive climate stories like how afforestation
+                     rates. Taking this positive approach provides hope, juxtaposing the idea that data related to climate change always has to be
+                     negative.
+                  </p>
+               </article>
+
+               <img src="images/evergreen/instagram-feed.jpg" alt="image of evergreen instagram feed" class="hidden instagramFeed" />
+            </div>
+
+            <div>
+               <p>
+                  Finally, not only do forests and green spaces aid in combating climate change, but they also play a role in our well-being. An
+                  installation was created out of this insight to reconnect people with nature. Inspired by a comment left on the website, the
+                  Evergreen Pod is an urban sanctuary where users can escape the city noise in a little native forest.
+               </p>
+
+               <img src="images/evergreen/installation.jpg" alt="image of evergreen pod installation mockup" class="hidden" />
+            </div>
+         </section>
+
+         <section class="projectContent projectVisuals">
+            <div>
+               <h5 class="capitalise">Visual Design</h5>
+               <p>
+                  The visual style for this project had to reflect the values of the outcome - positivity and sustainability. The brand identity is
+                  bright and connects to the environment, pulling inspiration from Aotearoa's unique nature. The bright colours paired with the
+                  playful illustrations of New Zealand native plants convey a friendly and fresh style that appeals to a younger target audience. This
+                  positive style aligns with data humanism.
+               </p>
+            </div>
+
+            <img src="images/evergreen/illustrations.jpg" alt="Image of Evergreen illustrations" class="hidden" />
+         </section>
+
+         <section class="projectContent projectConclusion hidden">
+            <p>
+               In essence, Evergreen explores how a more positive and solution-focused approach to climate change can enact change. Data
+               visualisations are the heart of the campaign. These focus more on qualitative information - personal stories and experiences that
+               connect people. This positive approach juxtaposes the idea that data is negative and complicated. It inspires and uplifts people
+               instead of further inducing climate anxiety. Evergreen won't solve climate change, but it begins a transition towards a more
+               sustainable future, motivating young people to take action, no matter how small, and to plant a seed for a better future, not just for
+               the planet's benefit, but for our own.
+            </p>
+         </section>
+
+         <img class="fullWidthImage lastImage" src="images/evergreen/website-ui.jpg" alt="image of evergreen website interface" />
+
+         <section class="nextProjectBar">
+            <a href="project-bud.html">← Previous</a>
+            <a href="project-beatTheBinge.html">Next →</a>
+         </section>
+      </main>
+
+      <footer class="peachBackground">
+         <div class="contactSection">
+            <h2>Want to chat?</h2>
+            <p>Interested in working together or just want to chat? <br />Shoot me a message and let’s create something together!</p>
+
+            <div class="socialLinks">
+               <a href="mailto:hattieeglinton@gmail.com?subject=Hi Harriet, we would like to reach out! ⭐️"
+                  ><i class="fa-regular fa-envelope"></i
+               ></a>
+               <a href="https://www.linkedin.com/in/harriet-eglinton/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+               <a href="https://www.instagram.com/harrietdesign/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+         </div>
+         <p class="copyright">Copyright © Harriet Design 2024</p>
+      </footer>
+   </body>
+</html>

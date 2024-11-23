@@ -1,3 +1,39 @@
+.evergreen-carousel {
+    height: 100%;
+    max-width: 100%;
+    /* Set to the desired carousel width */
+    overflow: hidden;
+}
+
+.evergreen-carousel img {
+    width: 100%;
+    display: none;
+    /* Hide all images initially */
+}
+
+.evergreen-carousel img.active {
+    display: block;
+    /* Show the active image */
+}
+
+.projectProblem {
+    margin-top: 2rem;
+}
+
+.projectProblem img {
+    margin: 0;
+}
+
+.projectProcess,
+.projectOutcome {
+    margin-block: 1rem;
+}
+
+.testingImage {
+    margin: 0 !important;
+}
+
+
 @media screen and (width > 768px) {
     main {
         display: flex;
@@ -6,8 +42,8 @@
     }
 
     .projectBio {
-        width: 90%;
-        height: 80vh;
+        width: 100%;
+        height: 90vh;
         margin: 0 auto;
         flex-direction: row;
         justify-content: space-between;
@@ -18,11 +54,6 @@
         margin: 0 auto;
     }
 
-    .projectBlurb {
-        justify-content: space-around;
-        margin-right: 4rem;
-    }
-
     .projectBio img {
         max-width: 50%;
         aspect-ratio: 3/2;
@@ -31,9 +62,14 @@
 
     .projectBrief {
         text-align: center;
-        padding-block: 6rem;
+        padding-block: 4rem;
         width: 50%;
         margin: 0 auto;
+    }
+
+    #pagesImage {
+        width: 80%;
+        height: auto;
     }
 
     /* Project Problem */
@@ -42,7 +78,8 @@
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-between;
-        margin-block: 4rem;
+        margin-block: 6rem;
+        width: 90%;
     }
 
     .projectProblem div {
@@ -56,109 +93,95 @@
     /* Project Process */
     .projectProcess {
         display: flex;
-        flex-direction: column;
-        gap: 5rem;
-        align-items: center;
-        max-width: 100%;
-    }
-
-    .projectProcess div {
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-start;
-        width: 100%;
+        width: 90%;
+        margin-block: 0;
     }
 
     .projectProcess article {
-        display: flex;
-        flex-direction: column;
-        margin-top: 6rem;
         width: 50%;
     }
 
-    #dataCards {
-        margin-top: 7rem;
+    .projectProcess article img {
         width: 80%;
-        object-fit: cover;
+        margin: 0 auto;
+        padding-block: 3rem;
     }
 
-    #dataTest {
-        width: 45%;
+    .testingImage {
+        width: 40%;
+        padding-top: 7rem;
         object-fit: cover;
+        aspect-ratio: 2/3;
     }
 
-    video {
-        margin-block: 5rem;
-        width: 70%;
+    .evergreen-carousel {
+        scale: 0.85;
+        margin-block: 8rem;
     }
 
     /* Project Outcome */
-    .projectSolution {
+    .projectOutcome {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .projectOutcome div:first-child {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-        margin-bottom: 5rem;
-        gap: 7rem;
+        gap: 5rem;
     }
 
-    .projectSolution div {
-        margin-top: 5rem;
+    .projectOutcome div:first-child article {
         width: 50%;
     }
 
-    .projectSolution div img {
-        width: 100%;
-        margin-top: 5rem;
+    .projectOutcome .instagramFeed {
+        width: 40%;
+        object-fit: cover;
+        aspect-ratio: 2/3;
     }
 
-    .projectSolution div img {
-        width: 90%;
-    }
-
-    #mobileMockup {
-        width: 35%;
-    }
-
-    /* PROJECT VISUALS/CHALLENGE*/
-
-    .projectVisuals {
+    .projectOutcome div:nth-child(2) {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 7rem;
+        align-items: center;
+        gap: 6rem;
+        margin-block: 5rem;
     }
 
-    .projectVisuals div {
-        margin-top: 5rem;
+    .projectOutcome div:nth-child(2) img {
+        width: 60%;
+    }
+
+    /* VISUAL DESIGN */
+    .projectVisuals {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .projectVisuals img {
         width: 50%;
-        object-fit: cover;
     }
 
-
-    .projectTools {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 5rem;
-        gap: 7rem;
-    }
-
-    .projectTools img {
+    .projectVisuals div {
         width: 40%;
     }
-
 
     /* PROJECT CONCLUSION */
 
     .projectConclusion {
         display: flex;
         align-items: center;
-        margin-bottom: 5rem;
+        margin-block: 5rem;
+        width: 100%;
     }
 
     .fullWidthImage {

@@ -1,3 +1,20 @@
+//Evergreen Image Slideshow
+document.addEventListener("DOMContentLoaded", () => {
+   const images = document.querySelectorAll(".evergreen-carousel img");
+   let currentIndex = 0;
+
+   function showNextImage() {
+      images[currentIndex].classList.remove("active"); // Hide current image
+      currentIndex = (currentIndex + 1) % images.length; // Move to the next index
+      images[currentIndex].classList.add("active"); // Show next image
+   }
+
+   // Initialize the slideshow
+   images[currentIndex].classList.add("active");
+   setInterval(showNextImage, 1200); // Change image every 3 seconds
+});
+
+
 const mobileNavLogo = document.querySelector(".navLogo");
 
 mobileNavLogo.addEventListener("click", function () {
@@ -40,43 +57,9 @@ btbRedirect.addEventListener("click", function () {
    window.location.href = "./project-beatTheBinge.html";
 });
 
-/* Value Flower Hover Effect */
-const hoverEmpathyText = document.getElementById("empathyText");
-const hoverEmpathyImg = document.getElementById("empathyFlower");
-const hoverConnectText = document.getElementById("connectText");
-const hoverConnectImg = document.getElementById("connectFlower");
-const hoverPlayText = document.getElementById("playText");
-const hoverPlayImg = document.getElementById("playFlower");
+const evergreenRedirect = document.querySelector(".evergreenProjectCard");
 
-hoverEmpathyText.addEventListener("mouseenter", function () {
-   hoverEmpathyImg.style.display = "unset";
-});
-hoverConnectText.addEventListener("mouseenter", function () {
-   hoverConnectImg.style.display = "unset";
-});
-hoverPlayText.addEventListener("mouseenter", function () {
-   hoverPlayImg.style.display = "unset";
+evergreenRedirect.addEventListener("click", function () {
+   window.location.href = "./project-evergreen.html";
 });
 
-hoverEmpathyText.addEventListener("mouseleave", function () {
-   hoverEmpathyImg.style.display = "none";
-});
-hoverConnectText.addEventListener("mouseleave", function () {
-   hoverConnectImg.style.display = "none";
-});
-hoverPlayText.addEventListener("mouseleave", function () {
-   hoverPlayImg.style.display = "none";
-});
-
-/* Facts Toggle Button */
-function toggleFacts() {
-   var x = document.getElementById("factsPopup");
-   if (x.style.display === "none") {
-      x.style.display = "unset";
-      document.getElementById("factsButton").innerText = "x";
-
-   } else {
-      x.style.display = "none";
-      document.getElementById("factsButton").innerText = "Fun Facts";
-   }
-}

@@ -7,7 +7,6 @@
     --grey: #F5F5F5;
 }
 
-
 nav {
     position: fixed;
     z-index: 3;
@@ -50,23 +49,28 @@ nav img {
 
 .overlay-content {
     position: relative;
-    top: 15%;
     width: 100%;
-    margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    margin-top: 6rem;
 }
 
 .overlay-content a {
+    height: fit-content;
     color: black;
     font-family: "Lexend Deca", sans-serif;
     font-weight: 400;
-    font-size: 2.5rem;
-    padding: 8px;
+    font-size: 1.75rem;
     text-decoration: none;
-    display: block;
     text-align: center;
+    padding-block: 3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0);
+    border-bottom: 1px solid  rgba(255, 255, 255, 0);
+}
+
+.overlay-content a:hover{
+    background-color: #eaeaea;
+    color: var(--orange);
 }
 
 .closebtn {
@@ -79,6 +83,7 @@ nav img {
 
 .current {
     color: var(--maroon) !important;
+    background-color: #eaeaea !important;
 }
 
 .desktop-nav {
@@ -110,11 +115,12 @@ nav img {
     }
 
     .desktop-nav a:hover {
-        color: rgba(0, 0, 0, 0.501);
+        color: var(--orange);
     }
 
-    .desktop-nav .current {
+    .current {
         text-decoration: underline;
         text-underline-offset: 0.5rem;
+        background-color: #ffffff00 !important;
     }
 }

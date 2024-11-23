@@ -31,7 +31,7 @@
 
     .projectBrief {
         text-align: center;
-        padding-block: 4rem;
+        padding-block: 6rem;
         width: 50%;
         margin: 0 auto;
     }
@@ -152,7 +152,6 @@
         width: 90%;
         margin: 2rem 4rem;
         object-fit: cover;
-        border-radius: 0.75rem;
     }
 
     .lastImage {
