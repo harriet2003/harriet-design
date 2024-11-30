@@ -2,6 +2,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lexend+Deca:wght@100..900&display=swap');
 
+@font-face {
+    font-family: 'Sketchfont';
+    src: url('../images/Myfont.ttf');
+  }
+
+  .sketchFont {
+    font-family: 'Sketchfont', sans-serif; 
+  }
+
+
+
 :root {
     --maroon: #6b0002;
     --blue: #c3d5fd;
