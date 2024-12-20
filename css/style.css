@@ -122,15 +122,20 @@ video {
     height: 100%;
 }
 
-#title {
-    width: 66%;
-    text-align: center;
+#mobileTitleImage {
+    width: 100%;
 }
 
 #landingNav {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     gap: 3rem;
+    text-align: center;
+    width: 100%;
 }
 
 
@@ -443,6 +448,15 @@ footer {
         left: 2rem;
         padding: 0.5rem 1rem;
         font-size: 1rem;
+    }
+
+    #desktopTitleImage {
+        width: 100%;
+        scale: 0.8;
+    }
+
+    #landingNav {
+        top: 66%;
     }
 
     .hidden2 {
