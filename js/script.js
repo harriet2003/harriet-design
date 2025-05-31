@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
    setInterval(showNextImage, 1200); // Change image every 3 seconds
 });
 
-
 const mobileNavLogo = document.querySelector(".navLogo");
 
 mobileNavLogo.addEventListener("click", function () {
@@ -63,3 +62,8 @@ evergreenRedirect.addEventListener("click", function () {
    window.location.href = "./project-evergreen.html";
 });
 
+const chrissysRedirect = document.querySelector(".chrissysProjectCard");
+
+chrissysRedirectRedirect.addEventListener("click", function () {
+   window.location.href = "./project-chrissys.html";
+});
