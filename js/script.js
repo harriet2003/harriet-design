@@ -64,6 +64,6 @@ evergreenRedirect.addEventListener("click", function () {
 
 const chrissysRedirect = document.querySelector(".chrissysProjectCard");
 
-chrissysRedirectRedirect.addEventListener("click", function () {
+chrissysRedirect.addEventListener("click", function () {
    window.location.href = "./project-chrissys.html";
 });
