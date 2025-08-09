@@ -39,7 +39,7 @@ section {
 }
 
 .peachBackground {
-    background-color: #FBEBE6;
+    background-color: var(--primary1);
 }
 
 .imgAnimation:hover {
