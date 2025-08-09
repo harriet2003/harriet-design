@@ -5,11 +5,13 @@
 
 :root {
     --maroon: #6b0002;
-    --blue: #c3d5fd;
-    --orange: #f5773b;
-    --pink: #f2b5a8;
-    --peach: #fde0d2;
-    --grey: #F5F5F5;
+    --yellow: #F9F2A2;
+    --peach: #EEA08A;
+    --almond: #F5E3DF;
+    --grey: #7D8491;
+    --text: #190804;
+
+    --primary1: #FBEBE6;
 }
 
 /* UNIVERSAL STYLES */
@@ -37,7 +39,7 @@ section {
 }
 
 .peachBackground {
-    background-color: var(--peach);
+    background-color: var(--primary1);
 }
 
 .imgAnimation:hover {
@@ -169,27 +171,6 @@ video {
     top: 0;
     left: 0;
 }
-
-#facts {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
-    scale: 1.3;
-}
-
-#meImage:hover {
-    cursor: url("../images/cursor-pointer.png"), auto;
-
-}
-
-#meImage:hover+#facts {
-    display: block;
-}
-
 
 .portrait p {
     color: var(--maroon);
