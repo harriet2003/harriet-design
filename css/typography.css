@@ -1,119 +1,74 @@
-/* ROMIE - Display/Header Font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lexend+Deca:wght@100..900&display=swap');
+
 @font-face {
-    font-family: 'Romie';
-    src: url('/romie_font/RomieTrial-Regular.otf');
-    src: url('/romie_font/RomieTrial-Bold.otf');
-    src: url('/romie_font/RomieTrial-Italic.otf');
-    src: url('/romie_font/RomieTrial-BoldItalic.otf');
-}
+    font-family: 'Sketchfont';
+    src: url('../images/Myfont.ttf');
+  }
 
+  .sketchFont {
+    font-family: 'Sketchfont', sans-serif; 
+  }
 
-/* DM Sans - Body/Content Font */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-
-.dm-sans {
-    font-family: "DM Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
 
 
 :root {
     --maroon: #6b0002;
-    --yellow: #F9F2A2;
-    --peach: #EEA08A;
-    --almond: #F5E3DF;
-    --grey: #7D8491;
-    --text: #190804;
-
-    --primary1: #FBEBE6;
+    --blue: #c3d5fd;
+    --orange: #f5773b;
+    --pink: #f2b5a8;
+    --peach: #fde0d2;
 }
 
 h1 {
     font-size: 5rem;
-    font-family: "Romie", serif;
-    font-weight: 600;
+    font-family: "DM Serif Display", serif;
+    font-weight: 100;
     line-height: 5rem;
 }
 
 h2 {
     font-size: 2.25rem;
-    font-family: "Romie", serif;
-    font-weight: 600;
+    font-family: "DM Serif Display", serif;
+    font-weight: 100;
 }
 
 h3 {
     font-size: 2rem;
-    font-family: "Romie", serif;
-    font-weight: 600;
+    font-family: "DM Serif Display", serif;
+    font-weight: 100;
     margin: 0;
 }
 
 h4 {
     font-size: 1.25rem;
-    font-family: "Romie", serif;
-    font-weight: 600;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
     margin: 0;
 }
 
-h5 {
+p {
     font-size: 1rem;
-    font-family: "Romie", serif;
-    font-weight: 600;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+h5,
+span {
+    font-size: 0.75rem;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
     margin: 0;
 }
 
 h6 {
-    font-size: 1rem;
-    font-family: "Romie", serif;
+    font-size: 0.5rem;
+    font-family: "Lexend Deca", sans-serif;
     font-weight: 400;
     margin: 0;
 }
-
-.headerLarge {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 600;
-}
-
-.headerMedium {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 600;
-}
-
-.headerSmall {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 600;
-}
-
-.bodyLarge {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 400;
-}
-
-.bodyMedium,
-p {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 400;
-}
-
-.bodySmall {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 400;
-}
-
-.bold {
-    font-weight: 600;
-}
-
-
-span {
-    font-size: 0.75rem;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 400;
-    margin: 0;
-}
-
 
 a {
     text-decoration: none;
@@ -126,7 +81,7 @@ a:hover {
 }
 
 .button {
-    font-family: "DM Sans", sans-serif;
+    font-family: "Lexend Deca", sans-serif;
     font-weight: 400;
     font-size: 1.25rem;
 }
@@ -143,7 +98,7 @@ a:hover {
 
 #landingNav a {
     color: var(--maroon);
-    font-family: "DM Sans", sans-serif;
+    font-family: "Lexend Deca", sans-serif;
     text-transform: uppercase;
 }
 
@@ -206,7 +161,7 @@ a:hover {
 
 figcaption {
     font-size: 0.5rem;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Lexend Deca", sans-serif;
     font-weight: 400;
     margin: 0;
     font-style: italic;
@@ -231,64 +186,87 @@ figcaption {
 /*DESKTOP LAYOUT*/
 @media screen and (width > 768px) {
     h1 {
-        font-size: 186.31px;
-        line-height: 298.1px;
+        font-size: 8rem;
+        line-height: 8rem;
     }
 
     h2 {
-        font-size: 95.39px;
-        line-height: 152.6px;
+        font-size: 4rem;
     }
 
     h3 {
-        font-size: 76.31px;
-        line-height: 122.1px;
+        font-size: 2.25rem;
     }
 
     h4 {
-        font-size: 61.05px;
-        line-height: 97.7px;
+        font-size: 2rem;
     }
 
-    h5,
-    h6 {
-        font-size: 48.83px;
-        line-height: 78.1px;
+    h5 {
+        font-size: 1.5rem;
     }
 
-    .headerLarge {
-        font-size: 39.06px;
-        line-height: 62.5px;
+    h6,
+    .projectCard h5 {
+        font-size: 1rem;
     }
 
-    .headerMedium {
-        font-size: 31.25px;
-        line-height: 50px;
+    #title {
+        width: 100%;
     }
 
-    .headerSmall {
-        font-size: 25px;
-        line-height: 40px;
+    #landingNav a {
+        font-size: 1.25rem;
     }
 
-    .bodyLarge {
-        font-size: 20px;
-        line-height: 32px;
+    .aboutBio p {
+        width: 80%;
     }
 
-    .bodyMedium,
-    p {
-        font-size: 16px;
-        line-height: 25.6px;
+    .services h2 {
+        font-size: 4.5rem;
     }
 
-    .bodySmall {
-        font-size: 12.8px;
-        line-height: 23px;
+    .contactSection h2 {
+        font-size: 4rem;
+        margin-top: 0;
     }
 
-    .link {
-        font-size: 20px;
-        line-height: 32px;
+    /*PROJECTS PAGE*/
+    .projectBlurb h3 {
+        font-size: 3.5rem;
+    }
+
+    .projectBlurb h4 {
+        font-size: 1.25rem;
+    }
+
+    #projectsHeader h2 {
+        font-size: 5rem;
+    }
+
+    #projectsHeader h3 {
+        font-size: 4rem;
+    }
+
+    #projectText p {
+        font-size: 1rem;
+    }
+
+
+
+    figcaption {
+        font-size: 0.75rem;
+
+    }
+
+    .projectConclusion p {
+        font-size: 1.25rem;
+        text-align: center;
+        width: 50%;
+    }
+
+    .nextProjectBar a {
+        font-size: 2rem;
     }
 }

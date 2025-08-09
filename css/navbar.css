@@ -1,11 +1,10 @@
 :root {
     --maroon: #6b0002;
-    --yellow: #F9F2A2;
-    --peach: #EEA08A;
-    --almond: #F5E3DF;
-    --grey: #7D8491;
-    --text: #190804;
-    --primary1: #FBEBE6;
+    --blue: #c3d5fd;
+    --orange: #f5773b;
+    --pink: #f2b5a8;
+    --peach: #fde0d2;
+    --grey: #F5F5F5;
 }
 
 nav {
@@ -59,7 +58,7 @@ nav img {
 .overlay-content a {
     height: fit-content;
     color: black;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Lexend Deca", sans-serif;
     font-weight: 400;
     font-size: 1.75rem;
     text-decoration: none;
@@ -110,7 +109,7 @@ nav img {
     }
 
     .desktop-nav a {
-        font-family: "DM Sans", sans-serif;
+        font-family: "Lexend Deca", sans-serif;
         font-weight: 400;
         font-size: 1.24rem;
     }
