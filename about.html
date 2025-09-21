@@ -7,99 +7,55 @@
       <link rel="icon" type="image/x-icon" href="images/h-logo.png" />
       <link rel="stylesheet" href="css/style.css" />
       <link rel="stylesheet" href="css/typography.css" />
-      <link rel="stylesheet" href="css/navbar.css" />
       <script src="js/script.js" defer></script>
       <script src="js/scroll.js" defer></script>
       <script src="https://kit.fontawesome.com/2028364a6f.js" crossorigin="anonymous"></script>
    </head>
 
-   <body>
-      <header class="peachBackground" id="scrollHere">
-         <nav class="mobile-nav">
-            <img class="navLogo" src="images/h-logo.png" alt="logo" />
-            <i class="fa-solid fa-bars" onclick="openNav()"></i>
-
-            <!-- The overlay -->
-            <div id="myNav" class="overlay">
-               <i class="fa-solid fa-xmark closebtn" onclick="closeNav()"></i>
-
-               <div class="overlay-content">
-                  <a href="index.html">Home</a>
-                  <a href="projects.html">Projects</a>
-                  <a href="about.html" class="current">About</a>
-                  <a href="https://www.instagram.com/_artbyharriet/" target="”_blank”">Art</a>
-               </div>
-            </div>
-         </nav>
-
-         <nav class="desktop-nav">
-            <img class="desktopNavLogo" src="images/h-logo.png" alt="logo" />
-            <div>
-               <a href="index.html">Home</a>
-               <a href="projects.html">Projects</a>
-               <a href="about.html" class="current">About</a>
-               <a href="https://www.instagram.com/_artbyharriet/" target="”_blank”">Art</a>
-            </div>
-         </nav>
+   <body style="background-color: var(--yellow)">
+      <header id="scrollHere">
+         <h4>Harriet <i>Design</i></h4>
       </header>
 
       <main>
          <section class="aboutBio">
-            <div class="portrait">
-               <div class="image-container">
-                  <img src="images/me-photo.jpg" alt="Photo of Harriet" id="meImage" />
+            <div>
+               <img src="images/me-photo.jpg" alt="Photo of Harriet" id="meImage" />
+               <div>
+                  <h6>my favourite things</h6>
+                  <p class="bodyMedium">
+                     drawing, the ocean, bookshops, coffee, the sound of rain, crafts, long walks with my dog, cooking & playing piano
+                  </p>
                </div>
             </div>
 
-            <div>
-               <h3>A little about me</h3>
-               <p>
-                  Hi, I'm Harriet, an Auckland-based designer specialising in UX and UI. I design with empathy, connecting with people through play
-                  and thoughtful design. I am passionate about creating beautiful and purposeful experiences that encourage positive change in the
-                  world.
+            <div id="aboutText">
+               <p class="headerSmall">
+                  Harriet is a designer specialising in UX and UI Design currently living in windy Wellington. Empathetic, detail-oriented, and
+                  interested in all areas of art and design, she's passionate about creating beautiful and purposeful experiences that encourage
+                  positive change in the world (and ☕️).
+                  <br />
+                  <br />
+                  E: <a href="mailto:harrieteglinton@gmail.com? &subject=Hello!">harrieteglinton@gmail.com</a>
+                  <br />
+                  Insta: <a href="https://www.instagram.com/harrietdesign/" target="_blank">@harrietdesign</a>
+                  <br />
+                  LinkedIn: <a href="https://www.linkedin.com/in/harriet-eglinton/" target="_blank">Harriet Eglinton</a>
                </p>
-               <p>
-                  I have always loved the creative field, and for as long as I can remember, been drawing, crafting and creating. From handmade
-                  birthday cards and bedazzled notebooks, my skills have transferred to a more digital world since discovering a passion for design.
-               </p>
-               <p>
-                  When I'm not sitting at my desk (or bed) you can find me getting creative other ways with pen and paper. I am most happy by the
-                  ocean, love traveling, good food, reading and taking my dog Clemmie for walks.
-               </p>
-
-               <img id="coffeeLogo" src="images/coffeeLogo.png" alt="coffee logo" />
+               <img src="images/illustration-duo.png" />
             </div>
-         </section>
-
-         <section class="services hidden">
-            <p class="capitalise hidden">Services Include</p>
-
-            <h4 class="hidden">
-               UX/UI Design
-               <img src="images/bud/bud-phones.jpg" alt="image of bud interface" />
-               , Web Design, Brand Identity,
-               <img src="images/bud/bud-logo.png" alt="image of bud logo" />Graphic Design,<img
-                  src="images/bud/bud-poster.jpg"
-                  alt="image of bud bus stop poster" />
-               Social Media Design, Data Visualisation, Campaign
-               <img src="images/smallData/computer-mockup.jpg" alt="image of small data interface" /> Design, Visual Art
-            </h4>
          </section>
       </main>
 
-      <footer class="peachBackground">
-         <div class="contactSection">
-            <h2>Want to chat?</h2>
-            <p>Interested in working together or just want to chat? <br />Shoot me a message and let’s create something together!</p>
-
-            <div class="socialLinks">
-               <a href="mailto:harrieteglinton@gmail.com?subject=Hi Harriet, we would like to reach out! ⭐️"
-                  ><i class="fa-regular fa-envelope"></i
-               ></a>
-               <a href="https://www.linkedin.com/in/harriet-eglinton/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-               <a href="https://www.instagram.com/harrietdesign/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <footer>
+         <nav>
+            <img class="navLogo" src="images/h-logo.png" alt="logo" />
+            <div>
+               <a href="about.html" class="current headerSmall">ABOUT</a>
+               <a href="projects.html" class="headerSmall">WORK</a>
+               <a href="https://www.instagram.com/_artbyharriet/" target="”_blank”" class="headerSmall">ART</a>
             </div>
-         </div>
+         </nav>
          <p class="copyright">Copyright © Harriet Design 2025</p>
       </footer>
    </body>

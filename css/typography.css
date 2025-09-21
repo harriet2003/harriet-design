@@ -2,14 +2,16 @@
 @font-face {
     font-family: 'Romie';
     src: url('/romie_font/RomieTrial-Regular.otf');
+    src: url('/romie_font/RomieTrial-Medium.otf');
     src: url('/romie_font/RomieTrial-Bold.otf');
     src: url('/romie_font/RomieTrial-Italic.otf');
+    src: url('/romie_font/RomieTrial-MediumItalic.otf');
     src: url('/romie_font/RomieTrial-BoldItalic.otf');
 }
 
-
 /* DM Sans - Body/Content Font */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 
 .dm-sans {
     font-family: "DM Sans", sans-serif;
@@ -18,111 +20,113 @@
     font-style: normal;
 }
 
-
 :root {
-    --maroon: #6b0002;
+    --maroon: #4A190B;
     --yellow: #F9F2A2;
     --peach: #EEA08A;
     --almond: #F5E3DF;
     --grey: #7D8491;
     --text: #190804;
-
     --primary1: #FBEBE6;
 }
 
+
 h1 {
-    font-size: 5rem;
     font-family: "Romie", serif;
-    font-weight: 600;
-    line-height: 5rem;
+    color: var(--maroon);
+    line-height: 160%;
+    font-weight: 400;
+    font-size: 149.05px;
+    margin: 0;
 }
 
 h2 {
-    font-size: 2.25rem;
     font-family: "Romie", serif;
-    font-weight: 600;
+    color: var(--maroon);
+    line-height: 160%;
+    font-weight: 400;
+    font-size: 76.31px;
+    margin: 0;
 }
 
 h3 {
-    font-size: 2rem;
     font-family: "Romie", serif;
-    font-weight: 600;
+    color: var(--maroon);
+    line-height: 160%;
+    font-weight: 400;
+    font-size: 61.05px;
     margin: 0;
 }
 
 h4 {
-    font-size: 1.25rem;
     font-family: "Romie", serif;
-    font-weight: 600;
+    color: var(--maroon);
+    line-height: 160%;
+    font-weight: 400;
+    font-size: 48.84px;
     margin: 0;
 }
 
-h5 {
-    font-size: 1rem;
+h5,
+h6 {
     font-family: "Romie", serif;
-    font-weight: 600;
-    margin: 0;
+    color: var(--maroon);
+    line-height: 160%;
+    font-weight: 400;
+    font-size: 39.06px;
 }
 
 h6 {
-    font-size: 1rem;
-    font-family: "Romie", serif;
-    font-weight: 400;
+    font-weight: 300;
     margin: 0;
 }
 
 .headerLarge {
     font-family: "DM Sans", sans-serif;
-    font-weight: 600;
+    font-size: 31.25px;
+    font-weight: 300;
 }
 
 .headerMedium {
     font-family: "DM Sans", sans-serif;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 300;
 }
 
 .headerSmall {
     font-family: "DM Sans", sans-serif;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+p, span {
+    font-family: "DM Sans", sans-serif;
+    font-size: 12.8px;
+    color: var(--text);
+    line-height: 160%;
 }
 
 .bodyLarge {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 400;
+    font-size: 16px;
 }
 
-.bodyMedium,
-p {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 400;
+.bodyMedium {
+    font-size: 12.8px;
 }
 
 .bodySmall {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 400;
+    font-size: 10.24px;
 }
 
 .bold {
     font-weight: 600;
 }
 
-
-span {
-    font-size: 0.75rem;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 400;
-    margin: 0;
-}
-
-
 a {
+    font-family: "DM Sans", sans-serif;
     text-decoration: none;
-    color: black;
+    color: var(--maroon);
     cursor: pointer;
-}
-
-a:hover {
-    cursor: url("../images/cursor-pointer.png"), auto;
 }
 
 .button {
@@ -135,74 +139,36 @@ a:hover {
     text-transform: uppercase;
 }
 
-
-/* Home Page */
-#title {
-    color: var(--maroon);
-}
-
+/* Landing */
 #landingNav a {
-    color: var(--maroon);
-    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
     text-transform: uppercase;
 }
 
 #landingNav a:hover {
     text-decoration: underline;
     text-underline-offset: 0.25rem;
+
 }
 
-/* About Page */
-.aboutBio h3 {
-    margin-block: 0.5rem;
+/* About */
+.aboutBio h6 {
+    font-size: 25px !important;
 }
 
-.contactSection h5 {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.contactSection h2 {
-    margin-block: 1rem;
-    font-size: 2.5rem;
-}
 
 /* Projects Page */
-.projectBlurb div:first-child p {
-    margin-top: 1rem;
+#smallerH1 {
+    line-height: 100%;
+    font-weight: 400;
+    font-size: 61.05px;
+    margin: 0;
 }
 
-#projectsHeader {
-    margin-left: 2rem;
+#quote h5{
+     font-size: 31.25px;
 }
 
-#projectsHeader h2 {
-    margin-bottom: 0;
-    font-size: 3.25rem;
-}
-
-#projectsHeader h3 {
-    font-size: 2.5rem;
-    font-style: italic;
-}
-
-#projectText p {
-    font-size: 0.75rem;
-}
-
-.projectSection h4 {
-    margin-block: 0 3rem;
-}
-
-.nextProjectBar a {
-    font-size: 1.5rem;
-    font-family: "DM Serif Display", serif;
-    font-weight: 100;
-}
-
-.projectTags p {
-    margin-right: 2rem;
-}
 
 figcaption {
     font-size: 0.5rem;
@@ -232,63 +198,58 @@ figcaption {
 @media screen and (width > 768px) {
     h1 {
         font-size: 186.31px;
-        line-height: 298.1px;
     }
 
     h2 {
         font-size: 95.39px;
-        line-height: 152.6px;
     }
 
     h3 {
         font-size: 76.31px;
-        line-height: 122.1px;
     }
 
     h4 {
         font-size: 61.05px;
-        line-height: 97.7px;
     }
 
     h5,
-    h6 {
+    h6,
+    #quote h5 {
         font-size: 48.83px;
-        line-height: 78.1px;
     }
 
     .headerLarge {
         font-size: 39.06px;
-        line-height: 62.5px;
     }
 
     .headerMedium {
         font-size: 31.25px;
-        line-height: 50px;
     }
 
     .headerSmall {
         font-size: 25px;
-        line-height: 40px;
     }
 
     .bodyLarge {
         font-size: 20px;
-        line-height: 32px;
     }
 
     .bodyMedium,
     p {
         font-size: 16px;
-        line-height: 25.6px;
     }
 
     .bodySmall {
         font-size: 12.8px;
-        line-height: 23px;
     }
 
-    .link {
-        font-size: 20px;
-        line-height: 32px;
+    /* About */
+    .aboutBio h6 {
+        font-size: 31.25px !important;
+    }
+
+    #smallerH1 {
+        line-height: 160%;
+        font-size: 149.05px;
     }
 }

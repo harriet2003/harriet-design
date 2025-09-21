@@ -1,3 +1,10 @@
+//Nav logo redirect
+const navLogo = document.querySelector(".navLogo");
+
+navLogo.addEventListener("click", function () {
+   window.location.href = "./index.html";
+});
+
 //Evergreen Image Slideshow
 document.addEventListener("DOMContentLoaded", () => {
    const images = document.querySelectorAll(".evergreen-carousel img");
@@ -14,56 +21,33 @@ document.addEventListener("DOMContentLoaded", () => {
    setInterval(showNextImage, 1200); // Change image every 3 seconds
 });
 
-const mobileNavLogo = document.querySelector(".navLogo");
-
-mobileNavLogo.addEventListener("click", function () {
-   window.location.href = "./index.html";
-});
-
-const desktopNavLogo = document.querySelector(".desktopNavLogo");
-
-desktopNavLogo.addEventListener("click", function () {
-   window.location.href = "./index.html";
-});
-
-//Navbar curtain menu
-/* Open when someone clicks on the span element */
-function openNav() {
-   document.getElementById("myNav").style.width = "100%";
-}
-
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNav() {
-   document.getElementById("myNav").style.width = "0%";
-}
-
 /*--Project Redirect Buttons--*/
 const budRedirect = document.querySelector(".budProjectCard");
 
 budRedirect.addEventListener("click", function () {
-   window.location.href = "./project-bud.html";
+   window.location.href = "./bud.html";
 });
 
 const smallDataRedirect = document.querySelector(".smallDataProjectCard");
 
 smallDataRedirect.addEventListener("click", function () {
-   window.location.href = "./project-smallData.html";
+   window.location.href = "./small-data.html";
 });
 
 const btbRedirect = document.querySelector(".btbProjectCard");
 
 btbRedirect.addEventListener("click", function () {
-   window.location.href = "./project-beatTheBinge.html";
+   window.location.href = "./beat-the-binge.html";
 });
 
 const evergreenRedirect = document.querySelector(".evergreenProjectCard");
 
 evergreenRedirect.addEventListener("click", function () {
-   window.location.href = "./project-evergreen.html";
+   window.location.href = "./evergreen.html";
 });
 
 const chrissysRedirect = document.querySelector(".chrissysProjectCard");
 
 chrissysRedirect.addEventListener("click", function () {
-   window.location.href = "./project-chrissys.html";
+   window.location.href = "./chrissys.html";
 });
