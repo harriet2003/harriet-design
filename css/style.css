@@ -147,10 +147,9 @@ section {
 }
 
 .aboutBio div:first-child {
-    width: 45%;
+    width: 66%;
     gap: 2rem;
     justify-content: center;
-    margin-left: 2rem;
     text-align: center;
 }
 
@@ -165,21 +164,19 @@ section {
     transform: rotate(0);
 }
 
+#favourites {
+    display: none;
+}
+
 #aboutText {
     align-items: end;
     gap: 24px;
-}
-
-.aboutBio .headerSmall {
-    width: 66%;
 }
 
 #aboutText img {
     width: 150px;
     transform: rotate(8deg);
 }
-
-
 
 /* PROJECTS PAGE */
 .projectsGallery {
@@ -336,6 +333,10 @@ nav div {
 
     #meImage:hover {
         transform: rotate(-4deg);
+    }
+
+    #favourites {
+        display: unset;
     }
 
     #aboutText {
